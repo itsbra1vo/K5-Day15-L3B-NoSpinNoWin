@@ -38,9 +38,10 @@ Nếu nối model thật qua API, tạo file `.env` từ `.env.example` và đi�
 
 | Thành phần | Trạng thái | Ghi chú |
 |---|---|---|
-| Lời gọi AI ở quyết định trung tâm | Chế độ giả (CP1) | Đang giữ khung chạy giả cho CP1–CP2, sẽ nối model thật trước CP3 |
-| Dữ liệu lịch & thông báo | Giả lập / mẫu | Dự kiến dùng bộ lịch `training-ops` giả lập kèm thông báo mẫu tự dựng (khai báo ở `data/DATA_CARD.md`) |
+| Lời gọi AI ở quyết định trung tâm | Chế độ giả (CP2) | Đã chạy thông toàn bộ luồng `codebase/agent.py` + `tools.py` qua `python run.py` và `eval --try 20` với `MODEL_PROVIDER=fake` (fallback bằng luật); sẽ nối model thật trong `codebase/ai.py` trước CP3 |
+| Dữ liệu lịch & thông báo | Giả lập / mẫu | `data/schedules.json` (108 buổi từ `training-ops` giả lập BTC), `data/announcements.json` (18 thông báo mẫu) và `data/threads.json` (8 thread mẫu) — khai báo ở `data/DATA_CARD.md` |
+| Bằng chứng pain & bộ câu thử | Thật (`n = 27`) / Khung chuẩn | Khảo sát `n = 27` người ngoài nhóm (`evidence/survey/results.csv`), `20` câu thử (`eval/benchmark.csv`) & `4` metric (`eval/metric_spec.yaml`), đã chấm thử chéo `4/5` (`eval/cham-thu.md`) |
 
 ## Dùng AI vào việc gì
 
-Ở giai đoạn CP1, nhóm sử dụng trợ lý AI để rà lại cấu trúc thư mục nộp bài đúng yêu cầu của đề và biên tập lại diễn đạt trong `canvas.md`, `spec.md` §0–§2 cho gọn rõ. Toàn bộ hướng bài toán, giả thuyết pain, lát cắt và phân công đều do 4 thành viên tự thống nhất và kiểm tra lại (chi tiết cập nhật tại [docs/ai-usage.md](docs/ai-usage.md)).
+Nhóm dùng trợ lý AI hỗ trợ chuẩn hoá dữ liệu mẫu từ bộ `training-ops`, viết script thống kê khảo sát `analyze_survey.py`, soạn nháp `spec.md` §3–§6/§9, khung code `codebase/tools.py`–`agent.py` và biên tập tài liệu CP1–CP2. Toàn bộ dữ liệu khảo sát `n = 27` đều thu từ người dùng thật ngoài nhóm, mọi mã nguồn `TB-xx`/`SCH-xx`, câu thử và chấm chéo đều do các thành viên trực tiếp kiểm chứng (chi tiết tại [docs/ai-usage.md](docs/ai-usage.md)).
