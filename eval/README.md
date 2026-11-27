@@ -32,7 +32,7 @@ Ba bộ dữ liệu trong `data/`, đều **không phải bằng chứng pain** 
 
 - **Người thứ hai chấm thử:** __ (không phải người viết spec) chấm độc lập 5 output (B01, B04, B06, B09, B12, phiếu chấm: `eval/cham-thu.md`) → khớp __/5 *(cần ≥4/5; lệch thì viết lại định nghĩa)*
 - LLM chấm (nếu có): chưa dùng, mọi metric chấm bằng code hoặc người.
-- **Chuẩn "đạt"** (chép nguyên từ `spec.md` §7, chốt trước 19:30 Thứ Sáu 27/11): "__" *(spec.md §7 chưa điền, chép vào khi nhóm chốt)*
+- **Chuẩn "đạt"**
 
 ## 4. Lệnh
 
