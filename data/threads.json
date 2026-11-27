@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "source": "Tập thread hỏi đáp Discord mẫu (synthetic, ẩn danh vai HV/TA)",
+    "total_threads": 8,
+    "note": "Dùng kiểm tra tình huống câu đã được TA trả lời ở thread khác hoặc ca cần chuyển TA."
+  },
+  "records": [
+    {
+      "thread_id": "TH-01",
+      "channel": "#l3-hoi-dap",
+      "created_at": "28/04/2027 19:20",
+      "topic_tags": ["lab 10", "nộp muộn", "gia hạn"],
+      "question": "Tối nay 28/04 bọn em chưa deploy kịp thì có được lùi hạn LAB 10 sang sáng mai không ạ?",
+      "answer_summary": "TA xác nhận đã có thông báo TB-04 gia hạn LAB 10 sang 12:00 trưa 29/04/2027 cho cả L3A và L3B.",
+      "related_announcements": ["TB-04"],
+      "resolved_by": "TA",
+      "status": "resolved",
+      "link": "https://discord.example/channels/k9/l3-hoi-dap/th-01"
+    },
+    {
+      "thread_id": "TH-02",
+      "channel": "#l3b-hoi-dap",
+      "created_at": "03/05/2027 20:10",
+      "topic_tags": ["lab 12", "file zip", "github", "hình thức nộp"],
+      "question": "Bài LAB 12 mình nén file zip nộp Drive như mọi lần hay đẩy lên GitHub vậy ạ?",
+      "answer_summary": "TA trả lời theo TB-10: nộp bằng link repo GitHub công khai trên LMS (không gửi zip qua Drive), hạn 23:59 ngày 05/05/2027.",
+      "related_announcements": ["TB-10"],
+      "resolved_by": "TA",
+      "status": "resolved",
+      "link": "https://discord.example/channels/k9/l3b-hoi-dap/th-02"
+    },
+    {
+      "thread_id": "TH-03",
+      "channel": "#l3-hoi-dap",
+      "created_at": "04/05/2027 21:40",
+      "topic_tags": ["lab 13", "hạn nộp", "18:00", "23:59"],
+      "question": "Em thấy bên #thong-bao-chung ghi LAB 13 hạn 23:59 ngày 06/05 mà bên #l3b-hoi-dap lại nhắc trước 18:00, vậy theo giờ nào ạ?",
+      "answer_summary": "Chưa có TA/Ban đào tạo chốt lại trên thread. Cần chuyển TA xác nhận trước khi báo lại học viên.",
+      "related_announcements": ["TB-11", "TB-12"],
+      "resolved_by": null,
+      "status": "pending_ta",
+      "link": "https://discord.example/channels/k9/l3-hoi-dap/th-03"
+    },
+    {
+      "thread_id": "TH-04",
+      "channel": "#l3a-hoi-dap",
+      "created_at": "29/04/2027 08:45",
+      "topic_tags": ["lec 13", "l3a", "phòng học", "h209", "e403"],
+      "question": "Chiều nay L3A học ở H209 hay sang E403 thế mọi người?",
+      "answer_summary": "TA dẫn TB-07: chiều 29/04 L3A chuyển sang E403 và H210 (phòng thêm H203, H208), bỏ lịch cũ H209.",
+      "related_announcements": ["TB-07"],
+      "resolved_by": "TA",
+      "status": "resolved",
+      "link": "https://discord.example/channels/k9/l3a-hoi-dap/th-04"
+    },
+    {
+      "thread_id": "TH-05",
+      "channel": "#l3-hoi-dap",
+      "created_at": "05/05/2027 22:05",
+      "topic_tags": ["hackathon", "đội trưởng", "mã học viên", "checkpoint"],
+      "question": "Bốn mốc CP1–CP4 của Hackathon có thể đổi người khác trong nhóm bấm nộp giúp được không ạ?",
+      "answer_summary": "TA nhắc theo TB-14: một người làm đội trưởng nộp cho cả 4 mốc và giữ đúng 1 mã học viên để hệ thống ghép điểm.",
+      "related_announcements": ["TB-14"],
+      "resolved_by": "TA",
+      "status": "resolved",
+      "link": "https://discord.example/channels/k9/l3-hoi-dap/th-05"
+    },
+    {
+      "thread_id": "TH-06",
+      "channel": "#l3-hoi-dap",
+      "created_at": "06/05/2027 19:00",
+      "topic_tags": ["hackathon", "phòng học", "c401", "e403", "chờ xác nhận"],
+      "question": "Chiều thứ Bảy 08/05 lớp L3B thi Hackathon ở phòng C401 đúng chưa ạ?",
+      "answer_summary": "TA phản hồi theo TB-15: C401, E403 mới là phòng dự kiến (chờ trường xác nhận), lịch chính thức báo lúc 11:00 sáng 08/05.",
+      "related_announcements": ["TB-15"],
+      "resolved_by": "TA",
+      "status": "resolved",
+      "link": "https://discord.example/channels/k9/l3-hoi-dap/th-06"
+    },
+    {
+      "thread_id": "TH-07",
+      "channel": "#l3-hoi-dap",
+      "created_at": "27/04/2027 20:15",
+      "topic_tags": ["lớp", "nhóm lab", "đổi nhóm"],
+      "question": "Mình mới chuyển từ L3A sang L3B mà trong bảng danh sách vẫn ở nhóm cũ thì nhắn ai sửa?",
+      "answer_summary": "TA dẫn TB-02: kiểm tra bảng sheet danh sách chung và nhắn trực tiếp TA phụ trách kênh lớp L3B để cập nhật trước buổi LAB tiếp theo.",
+      "related_announcements": ["TB-02"],
+      "resolved_by": "TA",
+      "status": "resolved",
+      "link": "https://discord.example/channels/k9/l3-hoi-dap/th-07"
+    },
+    {
+      "thread_id": "TH-08",
+      "channel": "#l3-hoi-dap",
+      "created_at": "04/05/2027 08:20",
+      "topic_tags": ["lec 14", "online", "zoom", "điểm danh"],
+      "question": "Sáng nay 04/05 học Online vào link Zoom nào và có điểm danh không?",
+      "answer_summary": "TA dẫn TB-01: dùng link Zoom chung https://zoom.example/k9-l3ab và điền form điểm danh cuối buổi trên LMS.",
+      "related_announcements": ["TB-01"],
+      "resolved_by": "TA",
+      "status": "resolved",
+      "link": "https://discord.example/channels/k9/l3-hoi-dap/th-08"
+    }
+  ]
+}
