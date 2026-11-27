@@ -11,10 +11,10 @@
 
 | STT | Họ và tên | Mã học viên | Vai trò | Phần việc chính |
 |---|---|---|---|---|
-| 1 | Đàm Hồng Thái | 2A202603927 | Đội trưởng | ____ |
-| 2 | Lê Quý Toàn | 2A202603941 | Thành viên | ____ |
-| 3 | Lê Danh Giang | 2A202603912 | Thành viên | ____ |
-| 4 | Nguyễn Bảo Duy | 2A202603890 | Thành viên | ____ |
+| 1 | Đàm Hồng Thái | 2A202603927 | Đội trưởng | Khảo sát pain và người dùng |
+| 2 | Lê Quý Toàn | 2A202603941 | Thành viên | Thu thập và chuẩn hóa nguồn thông tin |
+| 3 | Lê Danh Giang | 2A202603912 | Thành viên | Thiết kế luồng trợ lý và giới hạn an toàn |
+| 4 | Nguyễn Bảo Duy | 2A202603890 | Thành viên | Làm mẫu thử và đánh giá |
 
 **Quy tắc điền**
 - **Lớp:** `L3A` hoặc `L3B`. **Track:** một chữ `A` (EdTech), `B` (Y tế), `C` (Du lịch), `D` (Thương mại điện tử), `E` (Tài chính) hoặc `F` (Làn khác). **Link repo:** link GitHub công khai của nhóm.
