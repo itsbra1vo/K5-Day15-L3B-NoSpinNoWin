@@ -12,10 +12,10 @@ Tài liệu này là **"xương sống" chung để cả 4 thành viên làm vi�
    - Lê Danh Giang: `2A202603912_LeDanhGiang`
    - Nguyễn Bảo Duy: `2A202603890_NguyenBaoDuy`
 2. **Ai giữ file nào chỉ sửa đúng file đó** trước khi gộp nhánh:
-   - **Thái:** `canvas.md`, `evidence/interviews/*`, `evidence/survey/*`, `evidence/summary.md`, sau này là `validation/log.md` & slide.
-   - **Toàn:** `data/*`, `data/DATA_CARD.md`, `evidence/data-mining.md` (nếu đào kênh Discord), `cost/personas.yaml` (nháp phần tần suất nguồn).
-   - **Giang:** `spec.md` (§3–§6, §9), rà `SYSTEM` prompt & mở rộng câu thử theo kịch bản khó.
-   - **Duy:** `codebase/tools.py`, `codebase/agent.py`, `codebase/ai.py`, `eval/*`, `cost/cost-estimate.md` & chạy mô phỏng.
+   - **Thái:** `canvas.md`, `evidence/interviews/*`, `evidence/survey/*`, `evidence/summary.md`, quay video 30s CP3, sau này là `validation/log.md` & slide CP4.
+   - **Toàn:** `data/*`, `data/DATA_CARD.md`, `evidence/data-mining.md`, `cost/personas.yaml`, chạy `simulate --try` / `simulate` & `cost/cost-estimate.md`.
+   - **Giang:** `spec.md` (§3–§7, §9–§10), tinh chỉnh `SYSTEM` prompt / `guard()` trong `codebase/agent.py`, mở rộng `eval/benchmark.csv`, chạy `eval` & cập nhật `eval/README.md` / `eval/report.md`.
+   - **Duy:** `codebase/ai.py` (nối model thật, đo token, sửa lỗi API), `codebase/tools.py` & `codebase/agent.py` (lỗi kỹ thuật/cải tiến code Run 2), đồng chấm `eval/run-1.csv` & `eval/run-2.csv`.
 3. Khi xong chặng (trước giờ chốt CP2 / CP3 / CP4), mở Pull Request từ nhánh riêng về `main` để đội trưởng merge, rồi các máy khác chạy `git pull origin main` về nhánh của mình trước khi làm tiếp.
 
 ---
