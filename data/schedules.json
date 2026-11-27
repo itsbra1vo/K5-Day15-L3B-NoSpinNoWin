@@ -1,0 +1,2795 @@
+{
+  "metadata": {
+    "source": "BTC training-ops (giả lập Khoá 9, ẩn danh)",
+    "teaching_snapshot": "Bản xuất 27/04/2027 21:00",
+    "total_sessions": 108,
+    "note": "Dữ liệu giả lập dùng cho bản chạy thử A2, không phải bằng chứng pain."
+  },
+  "records": [
+    {
+      "schedule_id": "SCH-L3A-LEC-1",
+      "date": "15/04/2027",
+      "weekday": "T5",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "14:00–18:00",
+      "class_name": "L3A",
+      "session": "LEC 1",
+      "topic": "Intro AI20K & AI/LLM Foundation",
+      "delivery_mode": "offline",
+      "rooms": [
+        "H209",
+        "H210"
+      ],
+      "extra_rooms": [
+        "H203",
+        "H204"
+      ],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer K",
+        "Lecturer H"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D7",
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):E7"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2A-LEC-1",
+      "date": "15/04/2027",
+      "weekday": "T5",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:30–20:00",
+      "class_name": "L2A",
+      "session": "LEC 1",
+      "topic": "Data Annotation: AI, ML, DL, Vòng đời dữ liệu & Công cụ gán nhãn",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C401"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer R"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G7"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2B-LEC-1",
+      "date": "15/04/2027",
+      "weekday": "T5",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:30–20:00",
+      "class_name": "L2B",
+      "session": "LEC 1",
+      "topic": "Data Annotation: AI, ML, DL, Vòng đời dữ liệu & Công cụ gán nhãn",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C102"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer T"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):H7"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-LEC-1",
+      "date": "16/04/2027",
+      "weekday": "T6",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3B",
+      "session": "LEC 1",
+      "topic": "Intro AI20K & AI/LLM Foundation",
+      "delivery_mode": "offline",
+      "rooms": [
+        "H209",
+        "H210"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer D",
+        "Lecturer L"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D8",
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):E8"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3A-LAB-1",
+      "date": "16/04/2027",
+      "weekday": "T6",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3A",
+      "session": "LAB 1",
+      "topic": "Intro AI20K & AI/LLM Foundation",
+      "delivery_mode": "offline",
+      "rooms": [
+        "F307",
+        "G104",
+        "H201"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer F"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F8"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3A-LEC-2",
+      "date": "16/04/2027",
+      "weekday": "T6",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "14:00–18:00",
+      "class_name": "L3A",
+      "session": "LEC 2",
+      "topic": "Discovery & Problem Framing",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C201",
+        "H201"
+      ],
+      "extra_rooms": [
+        "H207",
+        "H208"
+      ],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer M",
+        "Lecturer D"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D9",
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):E9"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-LAB-1",
+      "date": "16/04/2027",
+      "weekday": "T6",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "14:00–18:00",
+      "class_name": "L3B",
+      "session": "LAB 1",
+      "topic": "Intro AI20K & AI/LLM Foundation",
+      "delivery_mode": "offline",
+      "rooms": [
+        "E403",
+        "F307",
+        "G104",
+        "H104"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer C"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F9"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2A-LAB-1",
+      "date": "16/04/2027",
+      "weekday": "T6",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:00–19:30",
+      "class_name": "L2A",
+      "session": "LAB 1",
+      "topic": "Data Annotation: AI, ML, DL, Vòng đời dữ liệu & Công cụ gán nhãn",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C401"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer N"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G9"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2B-LAB-1",
+      "date": "16/04/2027",
+      "weekday": "T6",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:00–19:30",
+      "class_name": "L2B",
+      "session": "LAB 1",
+      "topic": "Data Annotation: AI, ML, DL, Vòng đời dữ liệu & Công cụ gán nhãn",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C102",
+        "E402"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer T"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):H9"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-LEC-2",
+      "date": "17/04/2027",
+      "weekday": "T7",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3B",
+      "session": "LEC 2",
+      "topic": "Discovery & Problem Framing",
+      "delivery_mode": "offline",
+      "rooms": [
+        "H209",
+        "H210"
+      ],
+      "extra_rooms": [
+        "H204",
+        "H207"
+      ],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer J",
+        "Lecturer P"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D10",
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):E10"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3A-LAB-2",
+      "date": "17/04/2027",
+      "weekday": "T7",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3A",
+      "session": "LAB 2",
+      "topic": "Discovery & Problem Framing",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C104",
+        "C304",
+        "E305",
+        "H201",
+        "H202"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer I"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F10"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3A-LEC-3",
+      "date": "17/04/2027",
+      "weekday": "T7",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "14:00–18:00",
+      "class_name": "L3A",
+      "session": "LEC 3",
+      "topic": "Prompt, Function Calling & Tool Design (MCP)",
+      "delivery_mode": "offline",
+      "rooms": [
+        "H209",
+        "H210"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer F",
+        "Lecturer K"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D11",
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):E11"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-LAB-2",
+      "date": "17/04/2027",
+      "weekday": "T7",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:30–20:00",
+      "class_name": "L3B",
+      "session": "LAB 2",
+      "topic": "Discovery & Problem Framing",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C201",
+        "C203",
+        "G104"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer D"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F11"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-LEC-3",
+      "date": "19/04/2027",
+      "weekday": "T2",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3B",
+      "session": "LEC 3",
+      "topic": "Prompt, Function Calling & Tool Design (MCP)",
+      "delivery_mode": "offline",
+      "rooms": [
+        "H209",
+        "H210"
+      ],
+      "extra_rooms": [
+        "H203",
+        "H204"
+      ],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer B",
+        "Lecturer A"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D12",
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):E12"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3A-LAB-3",
+      "date": "19/04/2027",
+      "weekday": "T2",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3A",
+      "session": "LAB 3",
+      "topic": "Prompt, Function Calling & Tool Design (MCP)",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C102",
+        "C304",
+        "C305",
+        "C402",
+        "E403",
+        "H202"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer J"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F12"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2A-LEC-2",
+      "date": "19/04/2027",
+      "weekday": "T2",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L2A",
+      "session": "LEC 2",
+      "topic": "Data Annotation: Object Detection & Dữ liệu",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C401"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer V"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G12"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2B-LEC-2",
+      "date": "19/04/2027",
+      "weekday": "T2",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L2B",
+      "session": "LEC 2",
+      "topic": "Data Annotation: Object Detection & Dữ liệu",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C302"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer R"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):H12"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3A-LEC-4",
+      "date": "19/04/2027",
+      "weekday": "T2",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "14:00–18:00",
+      "class_name": "L3A",
+      "session": "LEC 4",
+      "topic": "ReAct & Agent Loop",
+      "delivery_mode": "offline",
+      "rooms": [
+        "H209",
+        "H210"
+      ],
+      "extra_rooms": [
+        "H203",
+        "H208"
+      ],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer E",
+        "Lecturer P"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D13",
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):E13"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-LAB-3",
+      "date": "19/04/2027",
+      "weekday": "T2",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:30–20:00",
+      "class_name": "L3B",
+      "session": "LAB 3",
+      "topic": "Prompt, Function Calling & Tool Design (MCP)",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C104",
+        "C302",
+        "C305",
+        "C402",
+        "H201",
+        "H202"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer I"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F13"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2A-LAB-2",
+      "date": "19/04/2027",
+      "weekday": "T2",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:30–20:00",
+      "class_name": "L2A",
+      "session": "LAB 2",
+      "topic": "Data Annotation: Object Detection & Dữ liệu",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C201",
+        "C301",
+        "E403"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer V"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G13"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2B-LAB-2",
+      "date": "19/04/2027",
+      "weekday": "T2",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:30–20:00",
+      "class_name": "L2B",
+      "session": "LAB 2",
+      "topic": "Data Annotation: Object Detection & Dữ liệu",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C202",
+        "C204"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer R"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):H13"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-LEC-4",
+      "date": "20/04/2027",
+      "weekday": "T3",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3B",
+      "session": "LEC 4",
+      "topic": "ReAct & Agent Loop",
+      "delivery_mode": "offline",
+      "rooms": [
+        "E403",
+        "F307"
+      ],
+      "extra_rooms": [
+        "H203",
+        "H204"
+      ],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer N",
+        "Lecturer H"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D14",
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):E14"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3A-LAB-4",
+      "date": "20/04/2027",
+      "weekday": "T3",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3A",
+      "session": "LAB 4",
+      "topic": "ReAct & Agent Loop",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C201",
+        "C204",
+        "E305",
+        "H201"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer K"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F14"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2A-LEC-3",
+      "date": "20/04/2027",
+      "weekday": "T3",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L2A",
+      "session": "LEC 3",
+      "topic": "Data Annotation: Image Segmentation",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C401"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer U"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G14"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2B-LEC-3",
+      "date": "20/04/2027",
+      "weekday": "T3",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L2B",
+      "session": "LEC 3",
+      "topic": "Data Annotation: Image Segmentation",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C301"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer V"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):H14"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-LAB-4",
+      "date": "20/04/2027",
+      "weekday": "T3",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "14:00–18:00",
+      "class_name": "L3B",
+      "session": "LAB 4",
+      "topic": "ReAct & Agent Loop",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C104",
+        "C301",
+        "C304",
+        "C402",
+        "E303",
+        "E305"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer O"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F15"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2A-LAB-3",
+      "date": "20/04/2027",
+      "weekday": "T3",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:00–19:30",
+      "class_name": "L2A",
+      "session": "LAB 3",
+      "topic": "Data Annotation: Image Segmentation",
+      "delivery_mode": "offline",
+      "rooms": [
+        "G104"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer S"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G15"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2B-LAB-3",
+      "date": "20/04/2027",
+      "weekday": "T3",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:00–19:30",
+      "class_name": "L2B",
+      "session": "LAB 3",
+      "topic": "Data Annotation: Image Segmentation",
+      "delivery_mode": "offline",
+      "rooms": [
+        "H210"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer R"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):H15"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3AB-LEC-5",
+      "date": "21/04/2027",
+      "weekday": "T4",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3AB",
+      "session": "LEC 5",
+      "topic": "AI Requirements & UX",
+      "delivery_mode": "online",
+      "rooms": [],
+      "extra_rooms": [],
+      "room_status": "online",
+      "lecturers": [
+        "Lecturer C"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D16"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2AB-LEC-4",
+      "date": "21/04/2027",
+      "weekday": "T4",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L2AB",
+      "session": "LEC 4",
+      "topic": "Data Annotation: Keypoint & Pose",
+      "delivery_mode": "online",
+      "rooms": [],
+      "extra_rooms": [],
+      "room_status": "online",
+      "lecturers": [
+        "Lecturer O"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G16"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3A-LEC-6",
+      "date": "21/04/2027",
+      "weekday": "T4",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "14:00–18:00",
+      "class_name": "L3A",
+      "session": "LEC 6",
+      "topic": "Data Engineering: Ingestion, Storage & Management & Data for Agents",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C301",
+        "E403"
+      ],
+      "extra_rooms": [
+        "H203"
+      ],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer B",
+        "Lecturer I"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D17",
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):E17"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-LAB-5",
+      "date": "21/04/2027",
+      "weekday": "T4",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "14:00–18:00",
+      "class_name": "L3B",
+      "session": "LAB 5",
+      "topic": "AI Requirements & UX",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C201",
+        "C203",
+        "C305",
+        "C402",
+        "E303",
+        "E305"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer K"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F17"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2A-LAB-4",
+      "date": "21/04/2027",
+      "weekday": "T4",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:30–20:00",
+      "class_name": "L2A",
+      "session": "LAB 4",
+      "topic": "Data Annotation: Keypoint & Pose",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C401"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer T"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G17"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2B-LAB-4",
+      "date": "21/04/2027",
+      "weekday": "T4",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:30–20:00",
+      "class_name": "L2B",
+      "session": "LAB 4",
+      "topic": "Data Annotation: Keypoint & Pose",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C204",
+        "C302",
+        "E402"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer S"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):H17"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-LEC-6",
+      "date": "22/04/2027",
+      "weekday": "T5",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3B",
+      "session": "LEC 6",
+      "topic": "Data Engineering: Ingestion, Storage & Management & Data for Agents",
+      "delivery_mode": "offline",
+      "rooms": [
+        "H209",
+        "H210"
+      ],
+      "extra_rooms": [
+        "H203",
+        "H207"
+      ],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer B",
+        "Lecturer C"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D18",
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):E18"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3A-LAB-5",
+      "date": "22/04/2027",
+      "weekday": "T5",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3A",
+      "session": "LAB 5",
+      "topic": "AI Requirements & UX",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C104",
+        "C203",
+        "E402",
+        "E403"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer O"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F18"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2AB-LEC-5",
+      "date": "22/04/2027",
+      "weekday": "T5",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L2AB",
+      "session": "LEC 5",
+      "topic": "Data Annotation: Video & Multi-Object Tracking",
+      "delivery_mode": "online",
+      "rooms": [],
+      "extra_rooms": [],
+      "room_status": "online",
+      "lecturers": [
+        "Lecturer Q"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G18"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3A-LEC-7",
+      "date": "22/04/2027",
+      "weekday": "T5",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "14:00–18:00",
+      "class_name": "L3A",
+      "session": "LEC 7",
+      "topic": "Retrieval & Context Engineering: RAG, MCP, Skills, Memory",
+      "delivery_mode": "offline",
+      "rooms": [
+        "H209",
+        "H210"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer K",
+        "Lecturer B"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D19",
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):E19"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-LAB-6",
+      "date": "22/04/2027",
+      "weekday": "T5",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "14:00–18:00",
+      "class_name": "L3B",
+      "session": "LAB 6",
+      "topic": "Data Engineering: Ingestion, Storage & Management & Data for Agents",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C204",
+        "E403",
+        "H201"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer A"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F19"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2A-LAB-5",
+      "date": "22/04/2027",
+      "weekday": "T5",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:30–20:00",
+      "class_name": "L2A",
+      "session": "LAB 5",
+      "topic": "Data Annotation: Video & Multi-Object Tracking",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C305"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer V"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G19"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2B-LAB-5",
+      "date": "22/04/2027",
+      "weekday": "T5",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:30–20:00",
+      "class_name": "L2B",
+      "session": "LAB 5",
+      "topic": "Data Annotation: Video & Multi-Object Tracking",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C201",
+        "C301"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer U"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):H19"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-LEC-7",
+      "date": "23/04/2027",
+      "weekday": "T6",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3B",
+      "session": "LEC 7",
+      "topic": "Retrieval & Context Engineering: RAG, MCP, Skills, Memory",
+      "delivery_mode": "offline",
+      "rooms": [
+        "E403",
+        "H104"
+      ],
+      "extra_rooms": [
+        "H204",
+        "H208"
+      ],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer C",
+        "Lecturer A"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D20",
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):E20"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3A-LAB-6",
+      "date": "23/04/2027",
+      "weekday": "T6",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3A",
+      "session": "LAB 6",
+      "topic": "Data Engineering: Ingestion, Storage & Management & Data for Agents",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C305",
+        "E305",
+        "E402",
+        "H202"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer I"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F20"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2A-LEC-6",
+      "date": "23/04/2027",
+      "weekday": "T6",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L2A",
+      "session": "LEC 6",
+      "topic": "Data Annotation: Thu thập dữ liệu & Quyền riêng tư",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C402"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer Q"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G20"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2B-LEC-6",
+      "date": "23/04/2027",
+      "weekday": "T6",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L2B",
+      "session": "LEC 6",
+      "topic": "Data Annotation: Thu thập dữ liệu & Quyền riêng tư",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C301"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer V"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):H20"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3A-LEC-8",
+      "date": "23/04/2027",
+      "weekday": "T6",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "14:00–18:00",
+      "class_name": "L3A",
+      "session": "LEC 8",
+      "topic": "From Workflows to Agents: Multi-Agent, Deterministic to Agentic",
+      "delivery_mode": "offline",
+      "rooms": [
+        "H209",
+        "H210"
+      ],
+      "extra_rooms": [
+        "H207",
+        "H208"
+      ],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer D",
+        "Lecturer E"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D21",
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):E21"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-LAB-7",
+      "date": "23/04/2027",
+      "weekday": "T6",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:30–20:00",
+      "class_name": "L3B",
+      "session": "LAB 7",
+      "topic": "Retrieval & Context Engineering: RAG, MCP, Skills, Memory",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C104",
+        "C305",
+        "E305",
+        "H201"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer M"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F21"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2A-LAB-6",
+      "date": "23/04/2027",
+      "weekday": "T6",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:00–19:30",
+      "class_name": "L2A",
+      "session": "LAB 6",
+      "topic": "Data Annotation: Thu thập dữ liệu & Quyền riêng tư",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C401"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer V"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G21"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2B-LAB-6",
+      "date": "23/04/2027",
+      "weekday": "T6",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:00–19:30",
+      "class_name": "L2B",
+      "session": "LAB 6",
+      "topic": "Data Annotation: Thu thập dữ liệu & Quyền riêng tư",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C201",
+        "C303",
+        "E402"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer O"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):H21"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-LEC-8",
+      "date": "24/04/2027",
+      "weekday": "T7",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3B",
+      "session": "LEC 8",
+      "topic": "From Workflows to Agents: Multi-Agent, Deterministic to Agentic",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C401",
+        "E403"
+      ],
+      "extra_rooms": [
+        "H203",
+        "H208"
+      ],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer P",
+        "Lecturer J"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D22",
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):E22"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3A-LAB-7",
+      "date": "24/04/2027",
+      "weekday": "T7",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3A",
+      "session": "LAB 7",
+      "topic": "Retrieval & Context Engineering: RAG, MCP, Skills, Memory",
+      "delivery_mode": "offline",
+      "rooms": [
+        "G104",
+        "H104",
+        "H202"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer N"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F22"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3A-LEC-9",
+      "date": "24/04/2027",
+      "weekday": "T7",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "14:00–18:00",
+      "class_name": "L3A",
+      "session": "LEC 9",
+      "topic": "Evaluation and Failure Analysis",
+      "delivery_mode": "offline",
+      "rooms": [
+        "D301",
+        "D302"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer M",
+        "Lecturer I"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D23",
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):E23"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-LAB-8",
+      "date": "24/04/2027",
+      "weekday": "T7",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:30–20:00",
+      "class_name": "L3B",
+      "session": "LAB 8",
+      "topic": "From Workflows to Agents: Multi-Agent, Deterministic to Agentic",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C301",
+        "C304",
+        "G104",
+        "H202"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer H"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F23"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2A-LEC-7",
+      "date": "24/04/2027",
+      "weekday": "T7",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:30–20:00",
+      "class_name": "L2A",
+      "session": "LEC 7",
+      "topic": "Data Annotation: Guideline, Taxonomy & Quy trình QC",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C401"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer S"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G23"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2B-LEC-7",
+      "date": "24/04/2027",
+      "weekday": "T7",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:30–20:00",
+      "class_name": "L2B",
+      "session": "LEC 7",
+      "topic": "Data Annotation: Guideline, Taxonomy & Quy trình QC",
+      "delivery_mode": "offline",
+      "rooms": [
+        "E305"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer P"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):H23"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-LEC-9",
+      "date": "26/04/2027",
+      "weekday": "T2",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3B",
+      "session": "LEC 9",
+      "topic": "Evaluation and Failure Analysis",
+      "delivery_mode": "offline",
+      "rooms": [
+        "D301",
+        "D302"
+      ],
+      "extra_rooms": [
+        "H204",
+        "H208"
+      ],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer V",
+        "Lecturer N"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D24",
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):E24"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3A-LAB-8",
+      "date": "26/04/2027",
+      "weekday": "T2",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3A",
+      "session": "LAB 8",
+      "topic": "From Workflows to Agents: Multi-Agent, Deterministic to Agentic",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C301",
+        "C305",
+        "H104",
+        "H202"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer G"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F24"
+      ],
+      "cross_sheet_note": "Bảng lab-coach ghi: dk: C301, C305, H104, H202 (trạng thái: tentative, nguồn: lab-coach-schedule.xlsx#Lịch lab 2604-0805:F6)"
+    },
+    {
+      "schedule_id": "SCH-L2AB-LEC-8",
+      "date": "26/04/2027",
+      "weekday": "T2",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L2AB",
+      "session": "LEC 8",
+      "topic": "Data Annotation: AI hỗ trợ gán nhãn: Pre-label",
+      "delivery_mode": "online",
+      "rooms": [],
+      "extra_rooms": [],
+      "room_status": "online",
+      "lecturers": [
+        "Lecturer R"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G24"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3A-LEC-10",
+      "date": "26/04/2027",
+      "weekday": "T2",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "14:00–18:00",
+      "class_name": "L3A",
+      "session": "LEC 10",
+      "topic": "Project Delivery — From PoC to Pilot (Gate 1)",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C104",
+        "E403"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer M",
+        "Lecturer N"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D25",
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):E25"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-LAB-9",
+      "date": "26/04/2027",
+      "weekday": "T2",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "14:00–18:00",
+      "class_name": "L3B",
+      "session": "LAB 9",
+      "topic": "Evaluation and Failure Analysis",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C201",
+        "C203",
+        "C302"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer G"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F25"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2A-LAB-8",
+      "date": "26/04/2027",
+      "weekday": "T2",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:30–20:00",
+      "class_name": "L2A",
+      "session": "LAB 8",
+      "topic": "Data Annotation: AI hỗ trợ gán nhãn: Pre-label",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C401"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer U"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G25"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2B-LAB-8",
+      "date": "26/04/2027",
+      "weekday": "T2",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:30–20:00",
+      "class_name": "L2B",
+      "session": "LAB 8",
+      "topic": "Data Annotation: AI hỗ trợ gán nhãn: Pre-label",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C102",
+        "C301",
+        "C303"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer V"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):H25"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-LEC-10",
+      "date": "27/04/2027",
+      "weekday": "T3",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3B",
+      "session": "LEC 10",
+      "topic": "Project Delivery — From PoC to Pilot (Gate 1)",
+      "delivery_mode": "offline",
+      "rooms": [
+        "H209",
+        "H210"
+      ],
+      "extra_rooms": [
+        "H203",
+        "H208"
+      ],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer E",
+        "Lecturer C"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D26",
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):E26"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3A-LAB-9",
+      "date": "27/04/2027",
+      "weekday": "T3",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3A",
+      "session": "LAB 9",
+      "topic": "Evaluation and Failure Analysis",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C203",
+        "C402",
+        "E303",
+        "H201"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer H"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F26"
+      ],
+      "cross_sheet_note": "Bảng lab-coach ghi: dk: C203, C402, E303, H201 (trạng thái: tentative, nguồn: lab-coach-schedule.xlsx#Lịch lab 2604-0805:F28)"
+    },
+    {
+      "schedule_id": "SCH-L2AB-LEC-9",
+      "date": "27/04/2027",
+      "weekday": "T3",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L2AB",
+      "session": "LEC 9",
+      "topic": "Data Annotation: Công cụ kiểm tự động & Pipeline cơ bản",
+      "delivery_mode": "online",
+      "rooms": [],
+      "extra_rooms": [],
+      "room_status": "online",
+      "lecturers": [
+        "Lecturer O"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G26"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3A-LAB-10",
+      "date": "27/04/2027",
+      "weekday": "T3",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:30–20:00",
+      "class_name": "L3A",
+      "session": "LAB 10",
+      "topic": "Project Delivery — From PoC to Pilot (Gate 1)",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C302",
+        "F307",
+        "H202"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer I"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F27"
+      ],
+      "cross_sheet_note": "Bảng lab-coach ghi: chờ xác nhận (trạng thái: pending, nguồn: lab-coach-schedule.xlsx#Lịch lab 2604-0805:F35)"
+    },
+    {
+      "schedule_id": "SCH-L2A-LAB-9",
+      "date": "27/04/2027",
+      "weekday": "T3",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:30–20:00",
+      "class_name": "L2A",
+      "session": "LAB 9",
+      "topic": "Data Annotation: Công cụ kiểm tự động & Pipeline cơ bản",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C202",
+        "E403"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer R"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G27"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2B-LAB-9",
+      "date": "27/04/2027",
+      "weekday": "T3",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:30–20:00",
+      "class_name": "L2B",
+      "session": "LAB 9",
+      "topic": "Data Annotation: Công cụ kiểm tự động & Pipeline cơ bản",
+      "delivery_mode": "offline",
+      "rooms": [
+        "H210"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer S"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):H27"
+      ],
+      "cross_sheet_note": "Bảng lab-coach ghi: chờ xác nhận (trạng thái: pending, nguồn: lab-coach-schedule.xlsx#Lịch lab 2604-0805:F44)"
+    },
+    {
+      "schedule_id": "SCH-L3AB-LEC-11",
+      "date": "28/04/2027",
+      "weekday": "T4",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3AB",
+      "session": "LEC 11",
+      "topic": "Guardrails, HITL & Responsible AI",
+      "delivery_mode": "online",
+      "rooms": [],
+      "extra_rooms": [],
+      "room_status": "online",
+      "lecturers": [
+        "Lecturer I"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D28"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2A-LEC-10",
+      "date": "28/04/2027",
+      "weekday": "T4",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L2A",
+      "session": "LEC 10",
+      "topic": "Data Annotation: Bàn giao dữ liệu & Truy vết",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C401"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer O"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G28"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2B-LEC-10",
+      "date": "28/04/2027",
+      "weekday": "T4",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L2B",
+      "session": "LEC 10",
+      "topic": "Data Annotation: Bàn giao dữ liệu & Truy vết",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C204"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer T"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):H28"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-LAB-10",
+      "date": "28/04/2027",
+      "weekday": "T4",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "14:00–18:00",
+      "class_name": "L3B",
+      "session": "LAB 10",
+      "topic": "Project Delivery — From PoC to Pilot (Gate 1)",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C104",
+        "C203",
+        "C302",
+        "E303",
+        "H104",
+        "H201"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer G"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F29"
+      ],
+      "cross_sheet_note": "Bảng lab-coach ghi: chờ xác nhận (trạng thái: pending, nguồn: lab-coach-schedule.xlsx#Lịch lab 2604-0805:F50)"
+    },
+    {
+      "schedule_id": "SCH-L2A-LAB-10",
+      "date": "28/04/2027",
+      "weekday": "T4",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:00–19:30",
+      "class_name": "L2A",
+      "session": "LAB 10",
+      "topic": "Data Annotation: Bàn giao dữ liệu & Truy vết",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C102",
+        "C201",
+        "H210"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer Q"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G29"
+      ],
+      "cross_sheet_note": "Bảng lab-coach ghi: dk: C102, C201, H210 (trạng thái: tentative, nguồn: lab-coach-schedule.xlsx#Lịch lab 2604-0805:F55)"
+    },
+    {
+      "schedule_id": "SCH-L2B-LAB-10",
+      "date": "28/04/2027",
+      "weekday": "T4",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:00–19:30",
+      "class_name": "L2B",
+      "session": "LAB 10",
+      "topic": "Data Annotation: Bàn giao dữ liệu & Truy vết",
+      "delivery_mode": "offline",
+      "rooms": [
+        "F307",
+        "G104",
+        "H202"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer R"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):H29"
+      ],
+      "cross_sheet_note": "Bảng lab-coach ghi: chờ xác nhận (trạng thái: pending, nguồn: lab-coach-schedule.xlsx#Lịch lab 2604-0805:F59)"
+    },
+    {
+      "schedule_id": "SCH-L3AB-LEC-12",
+      "date": "29/04/2027",
+      "weekday": "T5",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3AB",
+      "session": "LEC 12",
+      "topic": "AI SDLC: Coding Agent, Harness Engineering, Software Processes, Software Factory",
+      "delivery_mode": "online",
+      "rooms": [],
+      "extra_rooms": [],
+      "room_status": "online",
+      "lecturers": [
+        "Lecturer N"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D30"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2A-LEC-11",
+      "date": "29/04/2027",
+      "weekday": "T5",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L2A",
+      "session": "LEC 11",
+      "topic": "Data Annotation: Camera ngoài xe: Road Elements & SVM",
+      "delivery_mode": "offline",
+      "rooms": [],
+      "extra_rooms": [],
+      "room_status": "pending",
+      "lecturers": [
+        "Lecturer Q"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G30"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2B-LEC-11",
+      "date": "29/04/2027",
+      "weekday": "T5",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L2B",
+      "session": "LEC 11",
+      "topic": "Data Annotation: Camera ngoài xe: Road Elements & SVM",
+      "delivery_mode": "offline",
+      "rooms": [
+        "H210"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer T"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):H30"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3A-LEC-13",
+      "date": "29/04/2027",
+      "weekday": "T5",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "14:00–18:00",
+      "class_name": "L3A",
+      "session": "LEC 13",
+      "topic": "Launch & Economics",
+      "delivery_mode": "offline",
+      "rooms": [
+        "E403",
+        "H210"
+      ],
+      "extra_rooms": [
+        "H203",
+        "H208"
+      ],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer K",
+        "Lecturer O"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D31",
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):E31"
+      ],
+      "cross_sheet_note": "Bảng lab-coach ghi: E403, H210 + H203, H208 (trạng thái: confirmed, nguồn: lab-coach-schedule.xlsx#Lịch lab 2604-0805:F64)"
+    },
+    {
+      "schedule_id": "SCH-L3B-LAB-11",
+      "date": "29/04/2027",
+      "weekday": "T5",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "14:00–18:00",
+      "class_name": "L3B",
+      "session": "LAB 11",
+      "topic": "Guardrails, HITL & Responsible AI",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C304",
+        "C305",
+        "E402",
+        "H104",
+        "H201"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer I"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F31"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2A-LAB-11",
+      "date": "29/04/2027",
+      "weekday": "T5",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:00–19:30",
+      "class_name": "L2A",
+      "session": "LAB 11",
+      "topic": "Data Annotation: Camera ngoài xe: Road Elements & SVM",
+      "delivery_mode": "offline",
+      "rooms": [],
+      "extra_rooms": [],
+      "room_status": "pending",
+      "lecturers": [
+        "Lecturer Q"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G31"
+      ],
+      "cross_sheet_note": "Bảng lab-coach ghi: dk: C201, E303 (trạng thái: tentative, nguồn: lab-coach-schedule.xlsx#Lịch lab 2604-0805:F72)"
+    },
+    {
+      "schedule_id": "SCH-L2B-LAB-11",
+      "date": "29/04/2027",
+      "weekday": "T5",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:00–19:30",
+      "class_name": "L2B",
+      "session": "LAB 11",
+      "topic": "Data Annotation: Camera ngoài xe: Road Elements & SVM",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C204",
+        "C302"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer S"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):H31"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-LEC-13",
+      "date": "03/05/2027",
+      "weekday": "T2",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3B",
+      "session": "LEC 13",
+      "topic": "Launch & Economics",
+      "delivery_mode": "offline",
+      "rooms": [
+        "H209",
+        "H210"
+      ],
+      "extra_rooms": [
+        "H204",
+        "H207"
+      ],
+      "room_status": "tentative",
+      "lecturers": [
+        "Lecturer E",
+        "Lecturer K"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D36",
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):E36"
+      ],
+      "cross_sheet_note": "Bảng lab-coach ghi: chờ xác nhận + H204, H207 (trạng thái: pending, nguồn: lab-coach-schedule.xlsx#Lịch lab 2604-0805:F88)"
+    },
+    {
+      "schedule_id": "SCH-L3A-LAB-11",
+      "date": "03/05/2027",
+      "weekday": "T2",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3A",
+      "session": "LAB 11",
+      "topic": "Guardrails, HITL & Responsible AI",
+      "delivery_mode": "offline",
+      "rooms": [],
+      "extra_rooms": [],
+      "room_status": "pending",
+      "lecturers": [
+        "Lecturer L"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F36"
+      ],
+      "cross_sheet_note": "Bảng lab-coach ghi: dk: C201, C203, C204, C304, E305, F307 (trạng thái: tentative, nguồn: lab-coach-schedule.xlsx#Lịch lab 2604-0805:F81)"
+    },
+    {
+      "schedule_id": "SCH-L3A-LAB-12",
+      "date": "03/05/2027",
+      "weekday": "T2",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "14:00–18:00",
+      "class_name": "L3A",
+      "session": "LAB 12",
+      "topic": "AI SDLC: Coding Agent, Harness Engineering, Software Processes, Software Factory",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C104",
+        "C201",
+        "C203",
+        "C301",
+        "G104",
+        "H201"
+      ],
+      "extra_rooms": [],
+      "room_status": "tentative",
+      "lecturers": [
+        "Lecturer P"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F37"
+      ],
+      "cross_sheet_note": "Bảng lab-coach ghi: chờ xác nhận (trạng thái: pending, nguồn: lab-coach-schedule.xlsx#Lịch lab 2604-0805:F89)"
+    },
+    {
+      "schedule_id": "SCH-L2A-LAB-7",
+      "date": "03/05/2027",
+      "weekday": "T2",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:00–19:30",
+      "class_name": "L2A",
+      "session": "LAB 7",
+      "topic": "Data Annotation: Guideline, Taxonomy & Quy trình QC",
+      "delivery_mode": "offline",
+      "rooms": [],
+      "extra_rooms": [],
+      "room_status": "pending",
+      "lecturers": [
+        "Lecturer R"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G37"
+      ],
+      "cross_sheet_note": "Bảng lab-coach ghi: dk: C401 (trạng thái: tentative, nguồn: lab-coach-schedule.xlsx#Lịch lab 2604-0805:F95)"
+    },
+    {
+      "schedule_id": "SCH-L2B-LAB-7",
+      "date": "03/05/2027",
+      "weekday": "T2",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:00–19:30",
+      "class_name": "L2B",
+      "session": "LAB 7",
+      "topic": "Data Annotation: Guideline, Taxonomy & Quy trình QC",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C204",
+        "C303"
+      ],
+      "extra_rooms": [],
+      "room_status": "tentative",
+      "lecturers": [
+        "Lecturer U"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):H37"
+      ],
+      "cross_sheet_note": "Bảng lab-coach ghi: chờ xác nhận (trạng thái: pending, nguồn: lab-coach-schedule.xlsx#Lịch lab 2604-0805:F99)"
+    },
+    {
+      "schedule_id": "SCH-L3AB-LEC-14",
+      "date": "04/05/2027",
+      "weekday": "T3",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3AB",
+      "session": "LEC 14",
+      "topic": "Deployment, Agent Benchmarking and Observability: Monitoring, Tracking, etc.",
+      "delivery_mode": "online",
+      "rooms": [],
+      "extra_rooms": [],
+      "room_status": "online",
+      "lecturers": [
+        "Lecturer F"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D38"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-LAB-12",
+      "date": "04/05/2027",
+      "weekday": "T3",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "14:00–18:00",
+      "class_name": "L3B",
+      "session": "LAB 12",
+      "topic": "AI SDLC: Coding Agent, Harness Engineering, Software Processes, Software Factory",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C201",
+        "E402",
+        "H104",
+        "H201"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer F"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F39"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2A-LEC-12",
+      "date": "04/05/2027",
+      "weekday": "T3",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:30–20:00",
+      "class_name": "L2A",
+      "session": "LEC 12",
+      "topic": "Data Annotation: Giới thiệu DMS & OMS",
+      "delivery_mode": "offline",
+      "rooms": [],
+      "extra_rooms": [],
+      "room_status": "pending",
+      "lecturers": [
+        "Lecturer R"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G39"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2B-LEC-12",
+      "date": "04/05/2027",
+      "weekday": "T3",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:30–20:00",
+      "class_name": "L2B",
+      "session": "LEC 12",
+      "topic": "Data Annotation: Giới thiệu DMS & OMS",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C303"
+      ],
+      "extra_rooms": [],
+      "room_status": "tentative",
+      "lecturers": [
+        "Lecturer T"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):H39"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3A-LAB-13",
+      "date": "05/05/2027",
+      "weekday": "T4",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3A",
+      "session": "LAB 13",
+      "topic": "Launch & Economics",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C204",
+        "C304",
+        "E303",
+        "E305",
+        "E402"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer F"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F40"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2A-LEC-13",
+      "date": "05/05/2027",
+      "weekday": "T4",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L2A",
+      "session": "LEC 13",
+      "topic": "Data Annotation: Giới thiệu LiDAR & Point Cloud",
+      "delivery_mode": "offline",
+      "rooms": [],
+      "extra_rooms": [],
+      "room_status": "pending",
+      "lecturers": [
+        "Lecturer Q"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G40"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2B-LEC-13",
+      "date": "05/05/2027",
+      "weekday": "T4",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L2B",
+      "session": "LEC 13",
+      "topic": "Data Annotation: Giới thiệu LiDAR & Point Cloud",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C201"
+      ],
+      "extra_rooms": [],
+      "room_status": "tentative",
+      "lecturers": [
+        "Lecturer R"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):H40"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-LAB-13",
+      "date": "05/05/2027",
+      "weekday": "T4",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "14:00–18:00",
+      "class_name": "L3B",
+      "session": "LAB 13",
+      "topic": "Launch & Economics",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C104",
+        "C402",
+        "E305",
+        "E402",
+        "G104",
+        "H201"
+      ],
+      "extra_rooms": [],
+      "room_status": "tentative",
+      "lecturers": [
+        "Lecturer P"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F41"
+      ],
+      "cross_sheet_note": "Bảng lab-coach ghi: chờ xác nhận (trạng thái: pending, nguồn: lab-coach-schedule.xlsx#Lịch lab 2604-0805:F119)"
+    },
+    {
+      "schedule_id": "SCH-L2A-LAB-13",
+      "date": "05/05/2027",
+      "weekday": "T4",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:00–19:30",
+      "class_name": "L2A",
+      "session": "LAB 13",
+      "topic": "Data Annotation: Giới thiệu LiDAR & Point Cloud",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C201",
+        "E403",
+        "H210"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer Q"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G41"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2B-LAB-13",
+      "date": "05/05/2027",
+      "weekday": "T4",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:00–19:30",
+      "class_name": "L2B",
+      "session": "LAB 13",
+      "topic": "Data Annotation: Giới thiệu LiDAR & Point Cloud",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C102",
+        "C302"
+      ],
+      "extra_rooms": [],
+      "room_status": "tentative",
+      "lecturers": [
+        "Lecturer V"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):H41"
+      ],
+      "cross_sheet_note": "Bảng lab-coach ghi: chờ xác nhận (trạng thái: pending, nguồn: lab-coach-schedule.xlsx#Lịch lab 2604-0805:F128)"
+    },
+    {
+      "schedule_id": "SCH-L3A-LAB-14",
+      "date": "06/05/2027",
+      "weekday": "T5",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L3A",
+      "session": "LAB 14",
+      "topic": "Deployment, Agent Benchmarking and Observability: Monitoring, Tracking, etc.",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C104",
+        "C203",
+        "C204",
+        "C301",
+        "F307",
+        "G104"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer E"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F42"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2A-LEC-14",
+      "date": "06/05/2027",
+      "weekday": "T5",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L2A",
+      "session": "LEC 14",
+      "topic": "Data Annotation: 3D Object Detection: Model 3D đặc thù",
+      "delivery_mode": "offline",
+      "rooms": [],
+      "extra_rooms": [],
+      "room_status": "pending",
+      "lecturers": [
+        "Lecturer V"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G42"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2B-LEC-14",
+      "date": "06/05/2027",
+      "weekday": "T5",
+      "period": "Sáng (09:00 - 13:00)",
+      "period_short": "Sáng",
+      "time_range": "09:00–13:00",
+      "class_name": "L2B",
+      "session": "LEC 14",
+      "topic": "Data Annotation: 3D Object Detection: Model 3D đặc thù",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C201",
+        "E402"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer U"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):H42"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-LAB-14",
+      "date": "06/05/2027",
+      "weekday": "T5",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "14:00–18:00",
+      "class_name": "L3B",
+      "session": "LAB 14",
+      "topic": "Deployment, Agent Benchmarking and Observability: Monitoring, Tracking, etc.",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C203",
+        "E303",
+        "H201"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer H"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F43"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2A-LAB-14",
+      "date": "06/05/2027",
+      "weekday": "T5",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:30–20:00",
+      "class_name": "L2A",
+      "session": "LAB 14",
+      "topic": "Data Annotation: 3D Object Detection: Model 3D đặc thù",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C401"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer O"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G43"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2B-LAB-14",
+      "date": "06/05/2027",
+      "weekday": "T5",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:30–20:00",
+      "class_name": "L2B",
+      "session": "LAB 14",
+      "topic": "Data Annotation: 3D Object Detection: Model 3D đặc thù",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C301",
+        "H210"
+      ],
+      "extra_rooms": [],
+      "room_status": "tentative",
+      "lecturers": [
+        "Lecturer P"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):H43"
+      ],
+      "cross_sheet_note": "Bảng lab-coach ghi: chờ xác nhận (trạng thái: pending, nguồn: lab-coach-schedule.xlsx#Lịch lab 2604-0805:F150)"
+    },
+    {
+      "schedule_id": "SCH-L3A-LEC-15",
+      "date": "07/05/2027",
+      "weekday": "T6",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:00–19:30",
+      "class_name": "L3A",
+      "session": "LEC 15",
+      "topic": "Hackathon Project Capstone",
+      "delivery_mode": "offline",
+      "rooms": [],
+      "extra_rooms": [],
+      "room_status": "pending",
+      "lecturers": [
+        "Lecturer C"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D45"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-LEC-15",
+      "date": "07/05/2027",
+      "weekday": "T6",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:00–19:30",
+      "class_name": "L3B",
+      "session": "LEC 15",
+      "topic": "Hackathon Project Capstone",
+      "delivery_mode": "offline",
+      "rooms": [
+        "E305"
+      ],
+      "extra_rooms": [],
+      "room_status": "tentative",
+      "lecturers": [
+        "Lecturer I"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):E45"
+      ],
+      "cross_sheet_note": "Bảng lab-coach ghi: chờ xác nhận (trạng thái: pending, nguồn: lab-coach-schedule.xlsx#Lịch lab 2604-0805:F156)"
+    },
+    {
+      "schedule_id": "SCH-L2A-LAB-12",
+      "date": "07/05/2027",
+      "weekday": "T6",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:00–19:30",
+      "class_name": "L2A",
+      "session": "LAB 12",
+      "topic": "Data Annotation: Giới thiệu DMS & OMS",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C401"
+      ],
+      "extra_rooms": [],
+      "room_status": "confirmed",
+      "lecturers": [
+        "Lecturer T"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):G45"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L2B-LAB-12",
+      "date": "07/05/2027",
+      "weekday": "T6",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "16:00–19:30",
+      "class_name": "L2B",
+      "session": "LAB 12",
+      "topic": "Data Annotation: Giới thiệu DMS & OMS",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C202",
+        "E402"
+      ],
+      "extra_rooms": [],
+      "room_status": "tentative",
+      "lecturers": [
+        "Lecturer P"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):H45"
+      ],
+      "cross_sheet_note": "Bảng lab-coach ghi: chờ xác nhận (trạng thái: pending, nguồn: lab-coach-schedule.xlsx#Lịch lab 2604-0805:F161)"
+    },
+    {
+      "schedule_id": "SCH-L3A-HACKATHON",
+      "date": "08/05/2027",
+      "weekday": "T7",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "14:00–18:00",
+      "class_name": "L3A",
+      "session": "HACKATHON",
+      "topic": "Hackathon Project Capstone",
+      "delivery_mode": "offline",
+      "rooms": [],
+      "extra_rooms": [
+        "H201"
+      ],
+      "room_status": "pending",
+      "lecturers": [
+        "Lecturer B",
+        "Lecturer M"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):D47",
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):E47"
+      ],
+      "cross_sheet_note": ""
+    },
+    {
+      "schedule_id": "SCH-L3B-HACKATHON",
+      "date": "08/05/2027",
+      "weekday": "T7",
+      "period": "Chiều (14:00 - 18:00)",
+      "period_short": "Chiều",
+      "time_range": "14:00–18:00",
+      "class_name": "L3B",
+      "session": "HACKATHON",
+      "topic": "Hackathon Project Capstone",
+      "delivery_mode": "offline",
+      "rooms": [
+        "C401",
+        "E403"
+      ],
+      "extra_rooms": [],
+      "room_status": "tentative",
+      "lecturers": [
+        "Lecturer F",
+        "Lecturer N"
+      ],
+      "source_refs": [
+        "teaching-schedule.xlsx#Khoá 9 (GĐ1):F47"
+      ],
+      "cross_sheet_note": ""
+    }
+  ]
+}
