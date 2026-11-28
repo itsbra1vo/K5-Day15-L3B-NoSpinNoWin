@@ -1,0 +1,10 @@
+# Reflection — Lê Quý Toàn
+
+1. Vai trò + phần mình làm (trỏ tới file / commit):
+Mình phụ trách thu thập, chuẩn hóa dữ liệu nguồn, khảo sát tần suất trên Discord, đối chiếu chấm eval và làm phần ước tính chi phí 50 phiên cho NoSpinNoWin. Cụ thể mình viết `data/extract_schedules.py` trích 108 buổi vào `data/schedules.json`, biên soạn `data/announcements.json` (18 thông báo), `data/threads.json` (8 thread mẫu) và `data/DATA_CARD.md` (commit `00df556`, `883dd9e`); viết `evidence/analyze_discord.py` tổng hợp 50 câu hỏi ẩn danh và cấu hình `cost/personas.yaml`; hỗ trợ đối chiếu chấm Lượt 1 `eval/run-1.csv` (`a957eec`, `72ff5e0`) và chạy mô phỏng CP4 `cost/simulate-1.csv`, phân tích `cost/cost-estimate.md` cùng `spec.md` §8.
+
+2. AI hỗ trợ mình thế nào (việc gì, công cụ gì, chỗ nào phải sửa lại output AI):
+Mình dùng coding agent để viết nhanh `data/extract_schedules.py`, dựng JSON nháp từ bài đăng, viết `evidence/analyze_discord.py`, khung `cost/cost-estimate.md` và đối chiếu bảng kết quả sau khi chấm. Tuy nhiên mình luôn phải kiểm sửa output AI: rà lại sheet `Khoá 9 (GĐ1)` để ghép đủ 108 buổi học bù/lệch lịch mà script ban đầu dễ bỏ sót; kiểm tra lại toàn bộ 50 câu hỏi quét từ Discord để đảm bảo ẩn danh sạch tên/ID thật và giữ nguyên câu hỏi trùng chưa ghép; đồng thời phải sửa bản nháp tài liệu CP3 khi AI viết lệch số bước gọi model so với `codebase/agent.py`.
+
+3. Một câu thử trượt của nhóm và mình học được gì từ nó:
+Nhóm trượt `B01` ở Lượt 1 (`eval/run-1.csv`, 17/20 = 85%) vì agent trả lời chung chung kiểu "liên hệ TA" thay vì dừng dứt khoát bằng `ABSTAIN` khi thiếu dữ liệu cá nhân, sau đó Giang siết `SYSTEM` prompt và `fallback_decision()` giúp Lượt 2 (`eval/run-2.csv`) tăng lên 19/20 (95%). Ngoài ra khi mô phỏng 50 phiên trên `gemini-3.1-flash-lite`, phiên `S047` ở lượt T2 bị `TimeoutError: The read operation timed out`. Qua đó mình học rằng ở chatbot nội bộ, ranh giới từ chối đúng thẩm quyền và xử lý lỗi mạng khi hỏi nhiều lượt quan trọng ngang với khả năng tìm kiếm câu trả lời.
