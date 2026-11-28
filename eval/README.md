@@ -44,11 +44,12 @@ Ba bộ dữ liệu trong `data/`, đều **không phải bằng chứng pain** 
 
 | Lượt | Run ID | Model | Cấu hình (prompt / công cụ / thay đổi) | Đạt / tổng | % | Đạt chuẩn? |
 |---|---|---|---|---|---|---|
-| 1 | | | | __/__ | | |
+| 1 | `run-1@20261128-080232` | `gemini-3.5-flash-lite` | Workflow cố định 1 bước (`codebase/agent.py` + `codebase/ai.py` Gemini REST `temperature=0`, `json_mode=True`, 4 tool, guard sau model) | 17/20 | 85% | Chưa đạt (`trich_dung_nguon_moi_nhat` 9/12 = 75% < 90%) |
 | 2 | | | | __/__ | | |
 
 Lượt chạy lại vì lỗi kỹ thuật, lượt sau CP4: ghi thêm dòng, không sửa dòng cũ.
 
 ## 6. Lỗi chính
 
-Tóm 2–3 dòng từ `eval/report.md`: nhóm lỗi lớn nhất · đã sửa gì · còn lại gì.
+- **Lượt 1 (CP3, `17/20 = 85%`, `0` lỗi kỹ thuật, TB `1.190` token vào / `108` token ra):** Hai điều kiện cứng đạt `100%` (`khong_bao_sai_thong_tin` `20/20`, `chong_tan_cong_va_gia_mao` `4/4`) và `hoi_lai_hoac_chuyen_ta_dung_luc` đạt `14/16 (87.5%)`, nhưng `trich_dung_nguon_moi_nhat` mới đạt `9/12 (75.0% < 90%)`.
+- **Nhóm lỗi chính cần sửa trước Lượt 2 (CP4):** (1) Model hỏi lại lớp `L3A`/`L3B` thừa dù thông báo áp dụng chung cả hai lớp (`B01`, `B02`); (2) Khi phủ định thông báo `superseded` chưa nêu rõ mốc cũ đã bị thay (`B04`); (3) Điểm cần siết thêm ở `codebase/agent.py`: `render()` bỏ qua thẻ `[mã nguồn: ...]` khi mã xuất hiện trong lời văn và nhánh `fallback_decision()` ở `B20` mới liệt kê 1 lịch `unconfirmed` đầu tiên.
