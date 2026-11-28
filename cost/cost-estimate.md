@@ -32,6 +32,10 @@
 
 - Công thức quy đổi: `Chi phí / task thành công = chi phí / phiên ÷ 0.95`; `Chi phí / câu hỏi đạt = chi phí / phiên ÷ 1.6 ÷ 0.95` (theo từng câu thử).
 - Chọn vận hành chính trên **`gemini-3.1-flash-lite`**: giữ nguyên chất lượng đã kiểm định `19/20 (95%)` ở Lượt 2, tiết kiệm khoảng `5.67x` so với `gemini-4-hydrogen` (`$2.28` so với `$12.92/tháng` ở mức cơ sở), và theo bảng giá K5 còn có Free tier cùng context caching (`$0.025/1M`, chưa bật trong lượt đo).
+- **Nguồn bảng giá model (ngày xem: `25/11/2026`, đơn vị `USD/1M` token, gói Standard):**
+  - `gpt-4o-mini` (vào `$0.15/1M` · ra `$0.60/1M` · cache `$0.075/1M`): [OpenAI API Pricing](https://developers.openai.com/api/docs/pricing) (ngày xem `25/11/2026`, đối chiếu bảng giá K5).
+  - `gemini-3.1-flash-lite` (vào `$0.25/1M` · ra `$1.50/1M` · cache `$0.025/1M` · Free tier: Có): [Google Gemini API Pricing](https://ai.google.dev/gemini-api/docs/pricing) (ngày xem `25/11/2026`, đối chiếu bảng giá K5).
+  - `gemini-4-hydrogen` (vào `$1.50/1M` · ra `$7.50/1M` · cache `$0.075/1M` · Free tier: Có): [Google Gemini API Pricing](https://ai.google.dev/gemini-api/docs/pricing) (ngày xem `25/11/2026`, đối chiếu bảng giá K5).
 
 ---
 
@@ -53,5 +57,5 @@
 
 ## 5. Kết luận Go / No-Go
 
-- **So với tác động kỳ vọng:** Chi phí API model `gemini-3.1-flash-lite` chỉ **`$0.0033/người/tháng`** (`$2.28/tháng` cho 700 người dùng), và ngay cả khi gộp VPS 24/7 cũng chỉ khoảng **`$0.01/người/tháng`**, đổi lại tiết kiệm trung bình **`15.95 phút/người/tháng`** (theo ước tính tác động của nhóm từ phân tầng tần suất hỏi trong [personas.yaml](personas.yaml)).
+- **So với tác động kỳ vọng:** Chi phí API model `gemini-3.1-flash-lite` chỉ **`$0.0033/người/tháng`** (`$2.28/tháng` cho 700 người dùng), và ngay cả khi gộp VPS 24/7 cũng chỉ khoảng **`$0.01/người/tháng`**, đổi lại tiết kiệm trung bình **`15.95 phút/người/tháng`** (`2.65 lần/tháng × 6.02 phút/lần` từ khảo sát `n = 27`, tổng `~11.167 phút/tháng` cho `700` học viên L3 — xem [spec.md §2](../spec.md#2-impact--quyết-định-chọn) và [personas.yaml](personas.yaml)).
 - **Quyết định: GO** — Đủ điều kiện triển khai với `gemini-3.1-flash-lite` (`THINKING_BUDGET=0`). Lưu ý kỹ thuật khi đưa ra chạy thật: bổ sung cơ chế retry/fallback khi gặp timeout API như phiên `S047` (`1/50`).

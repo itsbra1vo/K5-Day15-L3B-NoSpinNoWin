@@ -37,7 +37,7 @@
 
 ## §3. Giải pháp tương tự
 
-*(Lưu ý theo §0: nhóm chưa kiểm tra chi tiết các bot đang cài trực tiếp trên Discord khoá; bảng dưới đây đối chiếu 3 nhóm cách giải quyết phổ biến mà học viên đang dùng hoặc có thể dùng thay thế.)*
+*(Qua quan sát thực tế kênh công khai `#💬-chung` giai đoạn `14/11–27/11/2026` trong `evidence/data-mining.md`, chưa ghi nhận bot tự động tra cứu lịch học/hạn nộp trên kênh hỏi đáp chung; bảng dưới đối chiếu 3 nhóm giải pháp thay thế mà học viên thường dùng.)*
 
 | Giải pháp | Học được gì | Cần né gì |
 |---|---|---|
@@ -212,3 +212,4 @@ Dưới đây là **8 kịch bản khó** (phủ đủ 4 lớp của đề) và 
   - *CP3 (đồng bộ tài liệu `README.md`, `spec.md` §0/§4/§7, `eval/report.md`, `eval/README.md`, `docs/ai-usage.md`):* Cập nhật sơ đồ và mô tả §4 khớp hoàn toàn với luồng `gather → call_model (1 bước) → guard → render` trong `codebase/agent.py`, cập nhật `README.md` sang trạng thái đã nối Gemini thật, và điền kết quả + 3 lỗi Lượt 1 vào `eval/report.md`. Giữ nguyên ngưỡng chuẩn "đạt" §7 và bộ câu thử.
   - *CP4 (`codebase/agent.py`, `eval/run-2.csv`, `traces/run-2.jsonl`, `eval/report.md`, `eval/README.md`, `reflection/le-danh-giang.md`):* Tinh chỉnh `SYSTEM` prompt, `render()` và `fallback_decision()` khắc phục `B01`, `B02`, `B04`; chạy & chấm Lượt 2 bằng `gemini-3.1-flash-lite` đạt `19/20 (95%)`, `0` lỗi kỹ thuật (đạt chuẩn CP2, giữ nguyên ngưỡng §7 & `eval/metric_spec.yaml`).
   - *CP4 R6 (`cost/simulate-1.csv`, `cost/simulate-1-summary.md`, `traces/simulate-1.jsonl`, `cost/cost-estimate.md`, `spec.md` §8, `reflection/le-quy-toan.md`, `docs/ai-usage.md`):* Chạy mô phỏng 50 phiên trên `gemini-3.1-flash-lite` với tỉ lệ đạt `19/20 (95%)` từ Lượt 2 (`49/50` phiên hợp lệ, `1/50` lỗi `TimeoutError` tại `S047`), ghi phân tích chi phí + độ nhạy vào `cost/cost-estimate.md` và cập nhật kết luận **GO** tại §8 (không thay đổi ngưỡng §7 hay bộ câu thử).
+  - *CP4 Rà soát tài liệu (`cost/cost-estimate.md`, `reflection/le-quy-toan.md`, `README.md`, `eval/report.md`, `AGENTS.md`, `spec.md` §3):* Bổ sung link trang giá chính thức + ngày xem `25/11/2026` và dẫn nguồn `spec.md` §2 vào `cost/cost-estimate.md`; chỉnh `reflection/le-quy-toan.md` khớp đúng nguyên nhân câu trượt `B01`/`B02` trong `eval/report.md`; cập nhật trạng thái Lượt 2 & mô phỏng CP4 tại `README.md` và dòng mở đầu `eval/report.md`; hoàn thiện quy ước nhóm trong `AGENTS.md` và đồng bộ nhận xét kênh `#💬-chung` tại §3 (giữ nguyên §7, `eval/metric_spec.yaml`, `eval/benchmark.csv`, các file kết quả chạy và trace).
