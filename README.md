@@ -14,34 +14,34 @@ Hệ thống sử dụng Python 3.10 trở lên (mặc định dùng thư viện
 # Kiểm tra bộ câu thử, metric spec và định dạng TEAMS.md
 python run.py check
 
-# Chạy bản chạy thử tương tác (hiện đang ở chế độ giả lập cho CP1)
+# Chạy bản chạy thử tương tác (gọi AI thật qua .env; chưa có .env sẽ chạy chế độ giả)
 python run.py
 
-# Các lệnh đánh giá và mô phỏng chi phí (dùng từ CP2–CP4)
-python run.py eval --try
-python run.py eval
+# Các lệnh đánh giá và mô phỏng chi phí (thêm --wait 4 nếu dùng gói miễn phí giới hạn lượt/phút)
+python run.py eval --try --wait 4
+python run.py eval --wait 4
 python run.py score eval/run-1.csv
-python run.py simulate --try
-python run.py simulate
+python run.py simulate --try --wait 4
+python run.py simulate --wait 4
 ```
 
-Nếu nối model thật qua API, tạo file `.env` từ `.env.example` và điền thông tin nhà cung cấp trước khi chạy `eval`.
+Để chạy bản gọi AI thật: chép `.env.example` thành `.env` (`Copy-Item .env.example .env` trên Windows hoặc `cp .env.example .env` trên macOS/Linux) rồi điền 3 dòng (`MODEL_PROVIDER=gemini`, `MODEL_NAME=gemini-3.5-flash-lite`, `API_KEY=<key của nhóm>`). File `.env` đã nằm trong `.gitignore`, tuyệt đối không commit.
 
 ## Cấu trúc mã nguồn của nhóm
 
-- `codebase/agent.py`: Luồng xử lý chính `answer(text)`.
-- `codebase/tools.py`: Các công cụ tra cứu thông báo/lịch và tạo phiếu chuyển TA (`@tool`).
-- `codebase/ai.py`: Hàm gọi model duy nhất `call_model(system, user)`.
+- `codebase/agent.py`: Luồng xử lý chính `answer(text)` (Workflow 3 bước cố định + `guard()` hậu kiểm).
+- `codebase/tools.py`: Các công cụ tra cứu thông báo/lịch/thread và tạo phiếu nháp chuyển TA (`@tool`).
+- `codebase/ai.py`: Hàm gọi model duy nhất `call_model(system, user, json_mode)` dùng REST chuẩn của Gemini (`urllib`).
 - `codebase/app.py`: Giao diện chạy thử qua dòng lệnh.
 
 ## Phần nào thật, phần nào giả
 
 | Thành phần | Trạng thái | Ghi chú |
 |---|---|---|
-| Lời gọi AI ở quyết định trung tâm | Chế độ giả (CP2) | Đã chạy thông toàn bộ luồng `codebase/agent.py` + `tools.py` qua `python run.py` và `eval --try 20` với `MODEL_PROVIDER=fake` (fallback bằng luật); sẽ nối model thật trong `codebase/ai.py` trước CP3 |
-| Dữ liệu lịch & thông báo | Giả lập / mẫu | `data/schedules.json` (108 buổi từ `training-ops` giả lập BTC), `data/announcements.json` (18 thông báo mẫu) và `data/threads.json` (8 thread mẫu) — khai báo ở `data/DATA_CARD.md` |
-| Bằng chứng pain & bộ câu thử | Thật (`n = 27`) / Khung chuẩn | Khảo sát `n = 27` người ngoài nhóm (`evidence/survey/results.csv`), `20` câu thử (`eval/benchmark.csv`) & `4` metric (`eval/metric_spec.yaml`), đã chấm thử chéo `4/5` (`eval/cham-thu.md`) |
+| Lời gọi AI ở quyết định trung tâm | **Thật (CP3)** | Đã nối Gemini REST API thật trong `codebase/ai.py` (chỉ dùng `urllib` chuẩn, gửi key qua header `x-goog-api-key`, `temperature=0`, `json_mode=True`); chạy hoàn chỉnh Lượt 1 trên `gemini-3.5-flash-lite` (`run-1@20261128-080232`, 0 lỗi kỹ thuật, `17/20 = 85%`). Khi chưa điền `.env`, code tự lùi về chế độ giả (`MODEL_PROVIDER=fake`) chỉ để kiểm luồng. |
+| Dữ liệu lịch & thông báo | Giả lập / mẫu | `data/schedules.json` (108 buổi từ `training-ops` giả lập BTC), `data/announcements.json` (18 thông báo mẫu) và `data/threads.json` (8 thread mẫu) — khai báo chi tiết ở `data/DATA_CARD.md`. |
+| Bằng chứng pain & bộ câu thử | **Thật (2 nguồn)** / Khung chuẩn | Đủ 2 nguồn thật đối chiếu chéo: khảo sát `n = 27` (`evidence/survey/results.csv`) và đào kênh Discord công khai `#💬-chung` `N = 50` (`evidence/data-mining.md`, 12 trích dẫn ẩn danh); `20` câu thử (`eval/benchmark.csv`, `7/20 = 35%` `nguoi_dung`), `4` metric (`eval/metric_spec.yaml`), chấm chéo `4/5` (`eval/cham-thu.md`). |
 
 ## Dùng AI vào việc gì
 
-Nhóm dùng trợ lý AI hỗ trợ chuẩn hoá dữ liệu mẫu từ bộ `training-ops`, viết script thống kê khảo sát `analyze_survey.py`, soạn nháp `spec.md` §3–§6/§9, khung code `codebase/tools.py`–`agent.py` và biên tập tài liệu CP1–CP2. Toàn bộ dữ liệu khảo sát `n = 27` đều thu từ người dùng thật ngoài nhóm, mọi mã nguồn `TB-xx`/`SCH-xx`, câu thử và chấm chéo đều do các thành viên trực tiếp kiểm chứng (chi tiết tại [docs/ai-usage.md](docs/ai-usage.md)).
+Nhóm dùng trợ lý AI hỗ trợ chuẩn hoá dữ liệu mẫu từ bộ `training-ops`, viết script thống kê khảo sát `evidence/survey/analyze_survey.py` và tổng hợp kênh Discord `evidence/analyze_discord.py`, xây dựng khung `codebase/`, nối Gemini REST API (`codebase/ai.py`), chạy & rà chấm Lượt 1 (`eval/run-1.csv`) và biên tập tài liệu CP1–CP3. Toàn bộ dữ liệu khảo sát `n = 27` và `N = 50` câu hỏi trên `#💬-chung` đều thu từ người thật và ẩn danh sạch, mọi mã nguồn `TB-xx`/`SCH-xx`, câu thử và kết quả chấm đều do thành viên trực tiếp kiểm chứng (chi tiết tại [docs/ai-usage.md](docs/ai-usage.md)).

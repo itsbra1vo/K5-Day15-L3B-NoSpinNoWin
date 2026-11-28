@@ -1,0 +1,12 @@
+bang,nhom,la_logistics,so_luong,ghi_chu
+phan_loai,lich_hoc_tkb,1,10,Hỏi thời khóa biểu / lịch học / trùng lịch buổi
+phan_loai,online_zoom_recording,1,10,Hỏi link Zoom / truy cập lớp Online / breakout room / bản ghi buổi học
+phan_loai,han_nop_checkpoint,1,6,Hỏi hạn nộp / nộp lại / nộp trễ CP1-CP2 hoặc Gate
+phan_loai,link_nop_dang_ky,1,4,Hỏi link nộp bài / link repo / link đăng ký nhóm / Cổng Công Khai
+phan_loai,phong_hoc_doi_phong,1,3,Hỏi phòng học / đổi phòng do vướng lịch khám sức khỏe
+phan_loai,chia_nhom_lop,1,2,Hỏi chia nhóm / sai nhóm Mentor Duty
+phan_loai,chinh_sach_diem_danh_tro_cap,0,8,Hỏi chính sách điểm danh / hạn mức nghỉ phép / trợ cấp
+phan_loai,ngoai_logistics_khac,0,7,Thẻ SV (1) / Git-PR (1) / xin slide (1) / xin mentor (1) / ký số Outlook (1) / XP (1) / lệnh bot (1)
+phan_hoi_logistics,khong_phan_hoi,1,12,Không có câu trả lời trên kênh (gồm các câu bị lặp lại qua nhiều ngày)
+phan_hoi_logistics,sau_15_phut,1,8,Trả lời sau >15 phút (23 phút đến 6h37p; có 2 câu đăng lúc ~01:06-01:15 sáng trả lời lúc ~07:42 sáng)
+phan_hoi_logistics,trong_15_phut,1,15,Được bạn cùng lớp hoặc staff trả lời trong vòng ≤15 phút

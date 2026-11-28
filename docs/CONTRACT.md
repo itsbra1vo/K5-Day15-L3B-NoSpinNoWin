@@ -6,17 +6,17 @@ Tài liệu này là **"xương sống" chung để cả 4 thành viên làm vi�
 
 ## 1. Quy tắc Git & phân quyền file (tránh xung đột hoàn toàn)
 
-1. **Không push trực tiếp lên `main` khi đang làm dở.** Mỗi thành viên tách nhánh riêng từ `main` mới nhất:
-   - Đàm Hồng Thái: `feat/thai-evidence`
-   - Lê Quý Toàn: `feat/toan-data` *(đang dùng)*
-   - Lê Danh Giang: `feat/giang-spec`
-   - Nguyễn Bảo Duy: `feat/duy-code-eval`
+1. **Không push trực tiếp lên `main` khi đang làm dở.** Mỗi thành viên dùng nhánh riêng theo đúng mã học viên của mình (luôn `git pull origin main` vào nhánh trước mỗi chặng mới):
+   - Đàm Hồng Thái: `2A202603927_DamHongThai`
+   - Lê Quý Toàn: `2A202603941_LeQuyToan` *(chuyển từ `feat/toan-data` / `feat/toan-cp2` sang chuẩn tên chung)*
+   - Lê Danh Giang: `2A202603912_LeDanhGiang`
+   - Nguyễn Bảo Duy: `2A202603890_NguyenBaoDuy`
 2. **Ai giữ file nào chỉ sửa đúng file đó** trước khi gộp nhánh:
-   - **Thái:** `canvas.md`, `evidence/interviews/*`, `evidence/survey/*`, `evidence/summary.md`, sau này là `validation/log.md` & slide.
-   - **Toàn:** `data/schedules.json`, `data/announcements.json`, `data/threads.json`, `data/extract_schedules.py`, `data/DATA_CARD.md`, `evidence/data-mining.md` (nếu đào thêm kênh Discord).
-   - **Giang:** `spec.md` (§3–§6, §9).
-   - **Duy:** `codebase/tools.py`, `codebase/agent.py`, `codebase/ai.py`, `eval/metric_spec.yaml`, `eval/benchmark.csv`, `eval/README.md`, `eval/report.md`, `cost/*`.
-3. Khi xong chặng (trước giờ chốt CP2 / CP3 / CP4), mở Pull Request hoặc báo đội trưởng kéo/gộp nhánh về `main` rồi các máy khác `git pull origin main` về trước khi làm tiếp.
+   - **Thái:** `canvas.md`, `evidence/interviews/*`, `evidence/survey/*`, `evidence/summary.md`, quay video 30s CP3, sau này là `validation/log.md` & slide CP4.
+   - **Toàn:** `data/*`, `data/DATA_CARD.md`, `evidence/data-mining.md`, `cost/personas.yaml`, chạy `simulate --try` / `simulate` & `cost/cost-estimate.md`.
+   - **Giang:** `spec.md` (§3–§7, §9–§10), tinh chỉnh `SYSTEM` prompt / `guard()` trong `codebase/agent.py`, mở rộng `eval/benchmark.csv`, chạy `eval` & cập nhật `eval/README.md` / `eval/report.md`.
+   - **Duy:** `codebase/ai.py` (nối model thật, đo token, sửa lỗi API), `codebase/tools.py` & `codebase/agent.py` (lỗi kỹ thuật/cải tiến code Run 2), đồng chấm `eval/run-1.csv` & `eval/run-2.csv`.
+3. Khi xong chặng (trước giờ chốt CP2 / CP3 / CP4), mở Pull Request từ nhánh riêng về `main` để đội trưởng merge, rồi các máy khác chạy `git pull origin main` về nhánh của mình trước khi làm tiếp.
 
 ---
 
