@@ -231,7 +231,7 @@ def slide5():
 
 
 def slide6():
-    im, d = base(6, "COST", "Tác động đã đo; chi phí/task chưa có mô phỏng thật", "Nguồn: spec.md §2 · cost/personas.yaml · cost/cost-estimate.md · kiểm tra thư mục cost/")
+    im, d = base(6, "COST", "Mô phỏng 50 phiên: $0.00088 cho mỗi task thành công", "Nguồn: cost/simulate-1-summary.md · spec.md §2 · cost/personas.yaml")
     rounded(d, (66, 300, 875, 930), CARD, 27)
     pill(d, 102, 338, "IMPACT ĐO TỪ KHẢO SÁT")
     metric(d, 102, 415, "15,95 phút", "tìm kiếm / người / tháng\n(2,65 lần × 6,02 phút)", TEAL, 71, 690)
@@ -240,14 +240,19 @@ def slide6():
     paragraph(d, (102, 815), "Chưa tính rủi ro trễ hạn hoặc đi nhầm phòng.", 22, MUTED, 690)
 
     rounded(d, (905, 300, 1854, 930), CARD2, 27)
-    label(d, (950, 338), "KỊCH BẢN QUY MÔ ĐÃ CHỐT", AMBER)
-    for y, tag, people, color in [(405, "THẤP", "350", TEAL), (500, "CƠ SỞ", "700", LIME), (595, "CAO", "1.000", AMBER)]:
-        pill(d, 950, y, tag, color, (36, 52, 59) if color == TEAL else (42, 55, 42) if color == LIME else (66, 49, 31), 17)
-        d.text((1135, y - 2), f"{people} học viên", font=font(28, True), fill=WHITE)
-    d.line((950, 675, 1808, 675), fill=LINE, width=2)
-    label(d, (950, 708), "$/TASK THÀNH CÔNG", CORAL)
-    paragraph(d, (950, 755), "CHƯA CÓ SỐ ĐO", 45, CORAL, 800, bold=True)
-    paragraph(d, (950, 817), "Chưa có mô phỏng thật ≥50 phiên. `simulate-mock.csv` là dữ liệu mock, không dùng làm kết quả. Model eval lượt 2: gemini-3.1-flash-lite; model mô phỏng chưa xác nhận.", 21, WHITE, 820, 1.25)
+    label(d, (950, 338), "ĐO TOKEN TRÊN MODEL THẬT", AMBER)
+    paragraph(d, (950, 385), "gemini-3.1-flash-lite  ·  tỉ lệ đạt 19/20 (95%)", 25, WHITE, 820, bold=True)
+    label(d, (950, 445), "CHI PHÍ / THÁNG THEO QUY MÔ", TEAL, 18)
+    columns = [(950, "THẤP", "350", "$1.15", TEAL), (1240, "CƠ SỞ", "700", "$2.30", LIME), (1530, "CAO", "1.000", "$3.28", AMBER)]
+    for x, tag, people, cost, color in columns:
+        rounded(d, (x, 485, x + 260, 620), (31, 48, 64), 18)
+        label(d, (x + 18, 500), tag, color, 15)
+        d.text((x + 18, 527), people + " người", font=font(21, True), fill=WHITE)
+        d.text((x + 18, 565), cost, font=font(29, True), fill=color)
+    d.line((950, 650, 1808, 650), fill=LINE, width=2)
+    paragraph(d, (950, 675), "$0.0033 / người / tháng ở kịch bản cơ sở.", 22, WHITE, 820, bold=True)
+    paragraph(d, (950, 730), "50 phiên; 3 phiên lỗi không tính vào trung bình. Chi phí/task = $0.00083/phiên ÷ 95%.", 20, MUTED, 820, 1.2)
+    paragraph(d, (950, 798), "Đối chiếu impact: ~15,95 phút tiết kiệm/người/tháng. Đây là mô phỏng theo persona; kho dữ liệu demo vẫn synthetic.", 20, WHITE, 820, 1.2)
     return im
 
 
@@ -262,9 +267,9 @@ def slide7():
 
     rounded(d, (1300, 305, 1854, 950), CARD, 28)
     label(d, (1340, 355), "VÌ SAO CHƯA GO?", AMBER)
-    paragraph(d, (1340, 420), "Chi phí / task chưa được đo bằng ≥50 phiên thật.", 30, WHITE, 450, 1.24, True)
+    paragraph(d, (1340, 420), "Chi phí đã mô phỏng: $0.00088/task thành công.", 28, WHITE, 450, 1.24, True)
     d.line((1340, 555, 1810, 555), fill=LINE, width=2)
-    paragraph(d, (1340, 595), "Kho dữ liệu demo là synthetic. Chưa có người dùng thử ghi nhận trong validation log.", 26, MUTED, 450, 1.3)
+    paragraph(d, (1340, 595), "Chưa có người dùng thử ghi nhận; kho dữ liệu demo còn synthetic. Cần xác nhận trải nghiệm trước khi mở rộng.", 25, MUTED, 450, 1.3)
     pill(d, 1340, 805, "ITERATE → PILOT", TEAL)
     return im
 
@@ -273,7 +278,7 @@ def slide8():
     im, d = base(8, "NEXT WEEK", "Một tuần nữa: đóng lỗi, đo chi phí, thử với người dùng", "Nguồn: eval/report.md §4 · validation/log.md · cost/personas.yaml")
     actions = [
         (300, "01", "ĐÓNG LỖI NO-SOURCE", "B10 đã từ chối thay vì chuyển TA. Ép tạo phiếu nháp khi thiếu nguồn; thêm retry timeout.", CORAL),
-        (500, "02", "ĐO CHI PHÍ THẬT", "Chạy ≥50 phiên theo run-2, ghi model/token/chi phí mỗi task thành công và so với impact 15,95 phút/người/tháng.", AMBER),
+        (500, "02", "KIỂM CHỨNG CHI PHÍ", "Mô phỏng đã đo $0.00088/task trên gemini-3.1-flash-lite; rà 3 phiên lỗi và đối chiếu lại khi đổi model / workload.", AMBER),
         (700, "03", "PILOT CÓ GIÁM SÁT", "Thử read-only với L3A, L3B và TA; ghi lại hành vi. Chuẩn bị video demo offline — validation log hiện chưa có phiên thử.", TEAL),
     ]
     for y, n, title, body, c in actions:
@@ -283,7 +288,7 @@ def slide8():
         label(d, (205, y + 28), title, c, 20)
         paragraph(d, (205, y + 69), body, 25, WHITE, 1560, 1.22)
     rounded(d, (66, 910, 1854, 985), (17, 43, 54), 18)
-    paragraph(d, (98, 928), "Mốc kết thúc: có số $/task được tái lập, lỗi B10 đã qua kiểm tra, và quyết định pilot dựa trên quan sát thật.", 23, TEAL, 1700, bold=True)
+    paragraph(d, (98, 928), "Mốc kết thúc: số $/task được tái lập, lỗi B10 đã qua kiểm tra, và quyết định pilot dựa trên quan sát thật.", 23, TEAL, 1700, bold=True)
     return im
 
 
