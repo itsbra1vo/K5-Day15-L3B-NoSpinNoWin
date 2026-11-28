@@ -1,36 +1,36 @@
 # Tổng hợp bằng chứng pain
 
-*(Cập nhật CP2 · 27/11/2026 18:45: Đã hoàn thành khảo sát ẩn danh đạt ngưỡng `n = 27 ≥ 20` người ngoài nhóm. Nhóm tiếp tục phỏng vấn `≥3` người ngoài nhóm và/hoặc đếm kênh Discord công khai làm nguồn đối chiếu thứ hai trước CP3.)*
+Nhóm đã hoàn thành đủ **2 nguồn bằng chứng thật độc lập đạt ngưỡng** để đối chiếu chéo: **(1) Khảo sát ẩn danh (`n = 27`)** và **(2) Đào dữ liệu kênh Discord công khai `#💬-chung` (`N = 50`)**.
+
+---
 
 ## 1. Nguồn đã dùng
 
 | Nguồn | Đạt ngưỡng? | File |
 |---|---|---|
 | Khảo sát (≥20 người ngoài nhóm, đúng người dùng) | ☑ Đạt (`n = 27`) | `evidence/survey/questions.md`, `evidence/survey/results.csv`, `evidence/survey/analyze_survey.py` |
-| Phỏng vấn (≥3 người ngoài nhóm, đúng người dùng) | ☐ *(đang triển khai cho nguồn đối chiếu 2)* | `evidence/interviews/` |
-| Đào data kênh Discord công khai | ☐ *(bổ sung nếu kịp trước CP3)* | `evidence/data-mining.md` |
+| Đào data kênh Discord công khai `#💬-chung` (14/11–27/11/2026) | ☑ Đạt (`N = 50`) | `evidence/data-mining.md`, `evidence/discord_summary.csv`, `evidence/analyze_discord.py` |
+| Phỏng vấn bổ trợ (`P1–P3`) | ☐ *(phiếu mẫu sẵn sàng nếu làm thêm trước CP4)* | `evidence/interviews/` |
 
-## 2. Số liệu chính từ khảo sát (`n = 27`, chạy lại bằng `python evidence/survey/analyze_survey.py`)
+---
 
+## 2. Số liệu chính
+
+### Nguồn 1 · Khảo sát ẩn danh (`n = 27`, tái lập bằng `python evidence/survey/analyze_survey.py`)
 - **Thành phần mẫu:** 18/27 (66.7%) học viên lớp L3B · 8/27 (29.6%) học viên lớp L3A · 1/27 (3.7%) TA / Lab Coach / Key Coach.
-- **Tần suất phát sinh pain:**
-  - **24/27 (88.9%)** phải tìm lại hoặc hỏi lại lịch học, phòng học, hạn nộp trên Discord ít nhất 1 lần/tháng (`13/27` gặp 1–2 lần · `7/27` gặp 3–5 lần · `4/27` gặp trên 5 lần · chỉ `3/27` trả lời 0 lần).
-  - **20/27 (74.1%)** vừa phải tìm lại tin trong tuần này hoặc ngay hôm nay (`10/27` hôm nay · `10/27` trong tuần này).
-  - Trung bình có trọng số toàn mẫu: **~2.65 lần/người/tháng** · **~6.02 phút/lần** (`12/27` mất 5–15 phút · `10/27` mất 2–5 phút · `5/27` dưới 2 phút).
-- **Cách xoay xở hiện tại (chọn nhiều):**
-  - 15/27 (55.6%) dùng thanh tìm kiếm (Search) hoặc xem tin ghim (Pinned)
-  - 14/27 (51.9%) phải đối chiếu chéo lại trên LMS / email / Google Calendar
-  - 12/27 (44.4%) cuộn lại từng kênh thông báo đọc từ trên xuống
-  - 12/27 (44.4%) nhắn hỏi lại trên kênh chat chung · 10/27 (37.0%) nhắn riêng hỏi bạn hoặc TA
-- **Sự cố cụ thể gặp trong 1 tháng qua (22/27 — 81.5% gặp ≥1 sự cố):**
-  - **13/27 (48.1%)** đọc nhầm thông báo cũ dù đã có thông báo mới gia hạn/đổi phòng
-  - **11/27 (40.7%)** thấy hai kênh hoặc hai tin nhắn ghi hạn nộp / phòng học khác nhau
-  - **7/27 (25.9%)** nhắn hỏi trên kênh chung nhưng tin bị trôi, không thấy ai trả lời ngay
-  - **6/27 (22.2%)** tới sát giờ học mới biết phòng đổi hoặc chuyển sang học Online
-- **Hậu quả gần nhất:** **17/27 (63.0%)** mất thời gian lội nhiều kênh/thread kiểm chứng lại · **16/27 (59.3%)** suýt trễ hoặc trễ hạn nộp bài / đi nhầm phòng học · **6/27 (22.2%)** phải nhắn làm phiền TA/bạn trả lời lại chuyện đã thông báo rồi.
+- **Tần suất & thời gian mất:** **24/27 (88.9%)** phải tìm lại/hỏi lại tin ≥1 lần/tháng (`13/27` 1–2 lần · `7/27` 3–5 lần · `4/27` >5 lần · `3/27` 0 lần); **20/27 (74.1%)** vừa phải tìm trong tuần này hoặc hôm nay. Trung bình có trọng số: **2.65 lần/người/tháng** · **6.02 phút/lần** (`12/27` mất 5–15 phút).
+- **Cách xoay xở:** 15/27 (55.6%) Search/Pinned · 14/27 (51.9%) đối chiếu LMS/Calendar · 12/27 (44.4%) cuộn kênh · 12/27 (44.4%) hỏi kênh chung · 10/27 (37.0%) nhắn riêng bạn/TA.
+- **Sự cố & hậu quả (`22/27 = 81.5%` gặp ≥1 sự cố):** 13/27 (48.1%) đọc nhầm thông báo cũ · 11/27 (40.7%) thấy hai kênh/tin ghi lệch nhau · 7/27 (25.9%) hỏi kênh chung bị trôi tin · 6/27 (22.2%) sát giờ mới biết đổi phòng/Online. Hệ quả: 17/27 (63.0%) tốn công lội nhiều kênh, **16/27 (59.3%) suýt trễ/trễ hạn nộp hoặc đi nhầm phòng**, 6/27 (22.2%) phải hỏi lại TA.
 
-## 3. Trích dẫn nguyên văn từ khảo sát (ẩn danh theo số thứ tự phiếu)
+### Nguồn 2 · Đào kênh Discord `#💬-chung` (`N = 50` câu hỏi gốc, `14/11–27/11/2026`, tái lập bằng `python evidence/analyze_discord.py`)
+- **35/50 (70.0%)** câu hỏi gốc trên kênh hỏi trực tiếp về **logistics khoá học**: lịch học/TKB (`10`), link Online/Zoom/bản ghi (`10`), hạn nộp/checkpoint (`6`), link nộp/link repo/đăng ký team (`4`), phòng học/đổi phòng (`3`), chia nhóm (`2`).
+- **20/35 (57.1%)** câu hỏi logistics (tương đương **40.0%** toàn mẫu `50` câu) **không có phản hồi (`12/35`) hoặc phải chờ >15 phút mới có người trả lời (`8/35`, lâu nhất tới 6h37p)**; ngay cả khi loại 2 câu hỏi đêm khuya (~01:06–01:15 sáng), tỉ lệ chậm/mất phản hồi vẫn là **18/35 (51.4%)**.
 
+---
+
+## 3. Trích dẫn nguyên văn đã ẩn danh (`12` trích dẫn từ 2 nguồn thật)
+
+**Từ khảo sát (`results.csv`):**
 1. *"Thông thường, mỗi phòng lab có một thông báo trên lớp mà không có thông báo trên các kênh nên việc đấy có thể khiến học viên rơi vào tình huống hỏi lại thông tin nộp bài thông qua lab coach hoặc TA"* — **Phiếu S06** *(Học viên L3B)*
 2. *"thông tin lộn xộn, rời rạc ở nhiều nơi, các thông báo nếu không được ghim thì sẽ bị tin nhắn khác làm trôi"* — **Phiếu S15** *(Học viên L3B)*
 3. *"sát giờ học mà chưa biết nội dung, học phòng nào"* — **Phiếu S13** *(Học viên L3B)*
@@ -39,15 +39,25 @@
 6. *"Quá nhiều kênh gây nhiễu trong khi User bình thường chỉ cần tham gia đọc trong một vài kênh nhất định"* — **Phiếu S19** *(Học viên L3B)*
 7. *"là khiến tôi đến muộn mà mất thời gian di chuyển"* — **Phiếu S08** *(Học viên L3A)*
 
-## 4. Kết luận sơ bộ & đối chiếu giả thuyết (`evidence/hypothesis.md`)
+**Từ kênh Discord công khai `#💬-chung` (`evidence/data-mining.md`):**
+8. *"Cho e hỏi là phòng C303 đang khám sức khỏe thì lab 3b sáng nay hc ở đâu ạ"* *(21/11/2026 — 3 bạn khác nhắn `+1`, chờ 23 phút)*
+9. *"cho tôi hỏi phát là link repo theo lms hay submission đây =))"* *(19/11/2026 — không có phản hồi)*
+10. *"cac anh oi, co TKB cho tuan sau chua a?"* *(22/11/2026 — lặp lại câu ngày 14/11, không phản hồi)*
+11. *"đăng ký team đã có link chưa ạ"* *(27/11/2026 — bị trôi giữa tin tuyển nhóm, không phản hồi)*
+12. *"Các anh chị lab coach cho em hỏi là CP1 và CP2 nhóm em phát hiện ra sai sót trong câu trả lời rồi thì giờ còn kịp để có thể nộp lại 2 checkpoint đó không ạ?"* *(27/11/2026 — phải tự bump, chờ 23 phút)*
 
-- **So với giả thuyết ban đầu:** Giả thuyết đặt ngưỡng đúng khi `≥12/20` học viên từng phải tìm lại hoặc mất trên 5 phút trong tháng qua. Kết quả thực tế cho thấy **24/27 (88.9%)** phải tìm lại thông tin trên Discord ít nhất 1 lần/tháng, **12/27 (44.4%)** mất 5–15 phút mỗi lần và tới **22/27 (81.5%)** gặp ít nhất 1 sự cố (48.1% đọc nhầm thông báo cũ, 40.7% gặp hai kênh ghi lệch nhau). **Giả thuyết ban đầu được xác nhận**, đồng thời dữ liệu mới cho thấy pain không chỉ giới hạn ở "học viên đi làm buổi tối" mà trải đều trên **cả học viên L3A lẫn L3B** do có quá nhiều kênh thông báo rải rác.
-- **Điều cần làm tiếp cho nguồn đối chiếu thứ hai (trước CP3):** Phỏng vấn sâu `≥3` người ngoài nhóm (2 học viên + 1 TA) và đếm mẫu câu hỏi lặp trên kênh công khai để giải thích rõ vì sao tin nhắn trên lớp/Discord hay bị trôi và TA thường tốn thời gian nhất ở loại câu hỏi nào.
+---
 
-## 5. Lịch phỏng vấn đối chiếu tiếp theo (cập nhật CP2 → CP3)
+## 4. Đối chiếu hai nguồn (Khớp & lệch ở đâu?)
 
-| Đối tượng | Thời gian dự kiến | Trạng thái |
-|---|---|---|
-| Phỏng vấn P1 (học viên L3B từng gặp tin lệch phòng/hạn) | 20:00 Thứ Sáu 27/11 | Chưa xong |
-| Phỏng vấn P2 (học viên L3A từng đến muộn / lỡ thông báo) | 20:30 Thứ Sáu 27/11 | Chưa xong |
-| Phỏng vấn P3 (TA / Lab Coach trực kênh hỏi đáp) | 21:00 Thứ Sáu 27/11 | Chưa xong |
+- **Hai nguồn khớp chặt với nhau:**
+  1. Khảo sát ghi nhận **88.9%** phải tìm/hỏi lại thông tin lịch–phòng–hạn nộp; trên kênh thật `#💬-chung`, nhóm câu hỏi này chiếm tới **70.0% (`35/50`)** toàn bộ câu hỏi gốc.
+  2. Khảo sát cho thấy **25.9%** từng bị trôi tin chưa ai trả lời và **44.4%** mất 5–15 phút dò tìm; dữ liệu đếm thực tế trên Discord chứng minh tỷ lệ trôi/chậm phản hồi thực trên kênh còn cao hơn (**20/35 = 57.1%** không có phản hồi hoặc chậm >15 phút), kèm các tình huống y hệt lo ngại trong khảo sát như hỏi đổi phòng C303 sát giờ (`21/11`), phân vân giữa 2 nguồn nộp LMS vs submission (`19/11`), hay hỏi lặp lại TKB qua nhiều tuần (`14/11` → `22/11`).
+- **Góc nhìn bổ trợ giữa hai nguồn:** Khảo sát phát hiện thêm nhóm sự cố mà log chat công khai không lộ hết: **55.6%** phải tự dùng Search và **48.1%** từng đọc nhầm thông báo cũ; còn kênh Discord giải thích trực quan vì sao câu hỏi bị trôi (tin logistics xen lẫn nhiều thảo luận, link mới không ghim đè tin cũ).
+
+---
+
+## 5. Kết luận
+
+- **Kiểm chứng giả thuyết (`evidence/hypothesis.md`):** Giả thuyết **đúng** và được khẳng định bằng cả hai nguồn độc lập (`n = 27` khảo sát + `N = 50` tin nhắn thật trên `#💬-chung`).
+- **Điều chỉnh phạm vi từ dữ liệu thật:** Đã mở rộng đúng sang cả hai lớp L3A/L3B (theo khảo sát) và giữ chặt lát cắt trợ lý tra cứu thông báo/lịch kèm kiểm tra mâu thuẫn (`LMS vs submission`), thông báo cũ/mới và tình trạng phòng chưa chốt (`C303`).
