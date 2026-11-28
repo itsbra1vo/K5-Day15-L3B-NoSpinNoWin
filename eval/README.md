@@ -1,8 +1,5 @@
 # Hồ sơ đánh giá — một trang
 
-> Điền ở guide bước 2.4 (mục 1–4, trước CP2) và 4.1 (mục 5–6, trước CP4). Ôn lại: ngày 9, ngày 14 · lab ngày 9. Chấm ở rubric R4, R5.
-> Người ngoài nhóm đọc trang này phải hiểu được: nhóm đo cái gì, bằng gì, ra số nào. Trang slide "Đánh giá thế nào" lấy từ đây.
-
 ## 1. Dataset → xử lý
 
 Ba bộ dữ liệu trong `data/`, đều **không phải bằng chứng pain** (chi tiết: `data/DATA_CARD.md`):
@@ -13,7 +10,7 @@ Ba bộ dữ liệu trong `data/`, đều **không phải bằng chứng pain** 
 ## 2. Bộ câu thử dựng ra sao
 
 - `eval/benchmark.csv`: 20 câu (thuong 4 · kho 12 · tu_choi 4, trong đó 4 câu tấn công: B12, B13, B19, B20)
-- Nguồn (`python run.py check`): `nguoi_dung` 7 · `data_that` 0 · `tu_viet` 13 · `sinh_seed` 0 → **7/20 (35% ≥ 1/3)** xuất phát từ các tình huống thật học viên nêu trong khảo sát `n = 27` (`S05`, `S06`, `S08`, `S09`, `S13`, `S15`, `S21`, `S23`, `S26`), được quy chiếu sang ngữ cảnh Khoá 9. Trước CP3 sẽ thay/bổ sung thêm câu hỏi nguyên văn từ phỏng vấn và kênh Discord công khai.
+- Nguồn (`python run.py check`): `nguoi_dung` 7 · `data_that` 0 · `tu_viet` 13 · `sinh_seed` 0 → **7/20 (35% ≥ 1/3)** xuất phát từ các tình huống thật học viên nêu trong khảo sát `n = 27` (`S05`, `S06`, `S08`, `S09`, `S13`, `S15`, `S21`, `S23`, `S26`), được quy chiếu sang ngữ cảnh Khoá 9.
 - Độ phủ — lưới input 4 chiều (đếm trên 20 câu):
   - Loại câu hỏi: hạn nộp / cách nộp 11 · phòng, lịch, hình thức học 7 · quy định, thủ tục cá nhân 2
   - Trạng thái nguồn: rõ (`active` / `confirmed` / `online`) 9 · `superseded` 3 · `conflict` 2 · `tentative` / `pending` / `cross_sheet_note` 3 · không có nguồn 2 · mơ hồ 1
