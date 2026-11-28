@@ -179,7 +179,15 @@ Dưới đây là **8 kịch bản khó** (phủ đủ 4 lớp của đề) và 
   - **Lượt 2 (`run-2@20261128-090447`, model `gemini-3.1-flash-lite`, `0` lỗi kỹ thuật, TB `1.443` token vào / `121` token ra):** `19/20` đạt (`95%` — `thuong 4/4`, `kho 11/12`, `tu_choi 4/4`); `khong_bao_sai_thong_tin` `20/20 (100%)`, `chong_tan_cong_va_gia_mao` `4/4 (100%)`, `hoi_lai_hoac_chuyen_ta_dung_luc` `15/16 (93.8%)`, `trich_dung_nguon_moi_nhat` `12/12 (100%)` → **Đạt chuẩn CP2** (`B01`, `B02`, `B04` đều khắc phục xong; còn 1 câu trượt `B10` do model chọn `"refuse"` thay vì `"escalate"` khi thiếu nguồn). Chi tiết tại `eval/run-2.csv`, `traces/run-2.jsonl`, `eval/report.md` và `eval/README.md`.
 
 ## §8. Chi phí khi dùng thật
-*(Cập nhật tại CP4)*
+*(Cập nhật tại CP4 — lượt mô phỏng `simulate-1@20261128-093336` trên `gemini-3.1-flash-lite`, tỉ lệ đạt `19/20 = 95%` từ [eval/run-2.csv](eval/run-2.csv), `49/50` phiên hợp lệ và `1/50` phiên timeout ở `S047` loại khỏi trung bình.)*
+
+| Model | Chi phí / phiên | Chi phí / task thành công | Tháng — thấp (350 người) | Tháng — cơ sở (700 người) | Tháng — cao (1.000 người) | Chi phí / người / tháng (cơ sở) |
+|---|---:|---:|---:|---:|---:|---:|
+| `gpt-4o-mini` (0.15 / 0.6) | $0.00046 | $0.00048 | $0.6089 | $1.22 | $1.74 | $0.0017 |
+| **`gemini-3.1-flash-lite` (0.25 / 1.5)** | **$0.00085** | **$0.00090** | **$1.14** | **$2.28** | **$3.26** | **$0.0033** |
+| `gemini-4-hydrogen` (1.5 / 7.5) | $0.0048 | $0.0051 | $6.46 | $12.92 | $18.46 | $0.0185 |
+
+- **Kết luận: GO.** Chi phí API của `gemini-3.1-flash-lite` chỉ **`$0.0033/người/tháng`** (`$2.28/tháng` cho 700 người dùng ở mức cơ sở), cộng thêm khoảng **`$5–$7/tháng`** *(tự ước tính)* nếu thuê VPS chạy bot Discord 24/7 vẫn chỉ quanh `$0.01/người/tháng`, rất nhỏ so với `15.95 phút/người/tháng` tiết kiệm được. Chi tiết và phân tích độ nhạy xem tại [cost/cost-estimate.md](cost/cost-estimate.md) và [cost/simulate-1.csv](cost/simulate-1.csv).
 
 ## §9. Rủi ro & an toàn
 
@@ -203,3 +211,4 @@ Dưới đây là **8 kịch bản khó** (phủ đủ 4 lớp của đề) và 
   - *CP3 (`eval/run-1.csv`, `traces/run-1.jsonl`, `eval/README.md`):* Chạy Lượt 1 trọn bộ 20 câu với `gemini-3.5-flash-lite` (`run-1@20261128-080232`, 0 lỗi, `17/20 = 85%`), chấm tay theo `eval/metric_spec.yaml` và chạy thử 10 phiên `simulate --try` kiểm khung chi phí (`0/10` lỗi).
   - *CP3 (đồng bộ tài liệu `README.md`, `spec.md` §0/§4/§7, `eval/report.md`, `eval/README.md`, `docs/ai-usage.md`):* Cập nhật sơ đồ và mô tả §4 khớp hoàn toàn với luồng `gather → call_model (1 bước) → guard → render` trong `codebase/agent.py`, cập nhật `README.md` sang trạng thái đã nối Gemini thật, và điền kết quả + 3 lỗi Lượt 1 vào `eval/report.md`. Giữ nguyên ngưỡng chuẩn "đạt" §7 và bộ câu thử.
   - *CP4 (`codebase/agent.py`, `eval/run-2.csv`, `traces/run-2.jsonl`, `eval/report.md`, `eval/README.md`, `reflection/le-danh-giang.md`):* Tinh chỉnh `SYSTEM` prompt, `render()` và `fallback_decision()` khắc phục `B01`, `B02`, `B04`; chạy & chấm Lượt 2 bằng `gemini-3.1-flash-lite` đạt `19/20 (95%)`, `0` lỗi kỹ thuật (đạt chuẩn CP2, giữ nguyên ngưỡng §7 & `eval/metric_spec.yaml`).
+  - *CP4 R6 (`cost/simulate-1.csv`, `cost/simulate-1-summary.md`, `traces/simulate-1.jsonl`, `cost/cost-estimate.md`, `spec.md` §8, `reflection/le-quy-toan.md`, `docs/ai-usage.md`):* Chạy mô phỏng 50 phiên trên `gemini-3.1-flash-lite` với tỉ lệ đạt `19/20 (95%)` từ Lượt 2 (`49/50` phiên hợp lệ, `1/50` lỗi `TimeoutError` tại `S047`), ghi phân tích chi phí + độ nhạy vào `cost/cost-estimate.md` và cập nhật kết luận **GO** tại §8 (không thay đổi ngưỡng §7 hay bộ câu thử).
