@@ -40,6 +40,6 @@ Khung chỉ dùng thư viện chuẩn của Python. Thêm thư viện thì ghi v
 
 ## Quy ước của nhóm
 
-- Ngôn ngữ trả lời người dùng: __
-- Phong cách code / đặt tên: __
-- Ai duyệt thay đổi do agent tạo trước khi commit: __
+- Ngôn ngữ trả lời người dùng: Tiếng Việt ngắn gọn, rõ căn cứ; tuân thủ định dạng `[mã nguồn: TB-xx / SCH-...]`, `[HỎI LẠI]` và `[CHUYỂN TA]` theo `docs/CONTRACT.md`.
+- Phong cách code / đặt tên: Python 3.10+ chỉ dùng thư viện chuẩn, hàm và biến `snake_case`, giữ nguyên các file khung (`run.py`, `eval/run_eval.py`, `cost/simulate.py`, `codebase/tracing.py`).
+- Ai duyệt thay đổi do agent tạo trước khi commit: Thành viên phụ trách tự kiểm lại toàn bộ output/số liệu, chạy `python run.py check` và mở PR vào `main` để nhóm rà trước khi merge.

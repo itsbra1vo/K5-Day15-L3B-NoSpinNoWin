@@ -1,6 +1,6 @@
 # Báo cáo đánh giá — lượt 1 → một cải tiến → lượt 2
 
-Đối chiếu trên bộ 20 câu thử cố định (`eval/benchmark.csv`), 4 metric đã chốt ở CP2 (`eval/metric_spec.yaml`), kết quả chạy thật `eval/run-1.csv` và `traces/run-1.jsonl` (tính điểm bằng `python run.py score eval/run-1.csv`).
+Đối chiếu trên bộ 20 câu thử cố định (`eval/benchmark.csv`), 4 metric đã chốt ở CP2 (`eval/metric_spec.yaml`), kết quả chạy thật Lượt 1 (`eval/run-1.csv`, `traces/run-1.jsonl`) và Lượt 2 (`eval/run-2.csv`, `traces/run-2.jsonl`) — kiểm lại bằng `python run.py score eval/run-1.csv` và `python run.py score eval/run-2.csv`.
 
 ## 1. Kết quả
 
